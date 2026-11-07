@@ -4,7 +4,16 @@
 
 Catarina Leandro · Independent AI product work sample · November 2026
 
-I gave a test queue two review slots. The model that reads a comment alongside its caption and any parent comment (Model C) put an affectionate joke about a corgi first and a reassuring message second. The only comment I labelled a violation came fifth out of 16. I read it as a statement about physical harm directed at another person. With only the text and caption, the speaker’s tone remained uncertain. The model raised an alert, but a reviewer with two slots would never have reached it.
+<!-- queue-example -->
+Imagine a moderator has 16 TikTok comments waiting and time to read only two. In this test, Model C read each comment and its video caption, then sorted the comments by their review scores. The moderator would read the first two and stop.
+
+| Place in line | Comment (paraphrased) | My label | Would the moderator read it? |
+|---|---|---|---|
+| 1st | Someone joked affectionately about a chubby corgi. | No violation | Yes |
+| 2nd | Someone reassured the creator about how they looked. | No violation | Yes |
+| 5th | The writer said their mother would hit the person they were addressing. | Violation | No |
+
+The fifth comment was the only one I labelled a violation. I read it as a remark about physical harm aimed at another person, although the caption left the writer’s tone unclear. **Model C flagged it for review, but four comments scored higher. By the time the moderator finished the corgi joke and the reassurance, both review slots were used. The flagged comment would still be waiting.**
 
 ## Two decisions and what would change them
 
@@ -38,7 +47,7 @@ I gave a test queue two review slots. The model that reads a comment alongside i
 |---|---|---|
 | **Establish a baseline.** Give keyword rules and a word-and-character text model the same 992 slots on 9,916 Civil Comments test examples. | Of 797 toxicity-labelled comments, the rules surfaced 253 and the text model surfaced 528. Recall at that budget rose from 31.7% to 66.2%. | Use the text model as the demo baseline. Evaluate transfer separately because TikTok policy labels answer a different question. |
 | **Test whether context helps.** The first 100 TikTok comments all received a no-violation label, yet A flagged five. In the next 40, I used 26 for training, ten for validation and set aside four unresolved decisions. | With cutoffs chosen to catch both validation violations, B (comment only) flagged four of eight harmless comments. C (comment, caption and available parent reply) flagged one. | Take C into blind testing with its cutoff frozen at 0.3933 rounded. Two validation positives gave little evidence about other kinds of harm. |
-| **Test a fresh queue.** I labelled 40 new comments before seeing C’s predictions. | C raised six alerts. One was the sole labelled violation and five were false alarms. One additional comment needed context. The violation ranked fifth for two review slots in the wording-selected group. | Investigate ranking and context errors. One positive gives too little evidence to estimate detection reliably. |
+| **Test a fresh queue.** I labelled 40 new comments before seeing C’s predictions. | C raised six alerts. One was the sole labelled violation and five were false alarms. One additional comment needed context. In the group of 16 selected for their wording, the only labelled violation ranked fifth. A moderator reading the first two would miss it. | Investigate ranking and context errors. One positive gives too little evidence to estimate detection reliably. |
 | **Challenge the proposed fix.** Give one already-flagged comment priority when its wording describes possible physical harm to a person. Compare both orders at identical capacity. | The rule moved the known example from fifth to first in replay. On two subsequent 40-comment batches, both methods picked the same five comments per batch. In the last batch, a revised human label left one violation, ranked fourth for two slots. | Keep Model A in the demo and retain C’s original order as the offline comparison. The replay motivated a hypothesis. The fresh comparisons have yet to demonstrate an improvement. |
 
 ## Limitations
