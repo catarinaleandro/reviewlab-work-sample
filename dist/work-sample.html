@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Catarina Leandro’s AI product case study on prioritising TikTok comments for human review. Explore the decision, experiments and proposed pilot.">
+<title>ReviewLab · Product case study · Catarina Leandro</title>
+<style>
+:root{color-scheme:light;--paper:#fafbf7;--ink:#19352e;--muted:#485f54;--green:#236346;--line:#d5dfd3;--tint:#edf3e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:1.2rem}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 'DM Sans',system-ui,sans-serif}
+a{color:var(--green);text-underline-offset:.2em}a:focus-visible,summary:focus-visible{outline:3px solid #af622e;outline-offset:3px}
+header{border-bottom:1px solid var(--line);background:#fff}.top,main,footer{max-width:1016px;margin:auto;padding-inline:clamp(18px,5vw,54px)}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:65px}.wordmark{font-size:1.2rem;font-weight:760;letter-spacing:-.045em}.top a{font-size:.9rem}
+.intro{padding:clamp(28px,5vw,64px) 0 26px}.byline,figcaption{color:var(--muted);font-size:.91rem}.byline{margin:0 0 12px}h1,h2{font-family:Manrope,system-ui,sans-serif;line-height:1.15;letter-spacing:-.038em}h1{font-size:clamp(2.25rem,5.5vw,4rem);max-width:19ch;margin:0 0 18px}h2{font-size:clamp(1.45rem,3vw,2.05rem);border-top:1px solid var(--line);padding-top:31px;margin:36px 0 12px}p{max-width:78ch;margin:.8rem 0}.lede{max-width:72ch;font-size:1.08rem}.links,nav{display:flex;gap:10px 20px;flex-wrap:wrap}.links{margin:18px 0 0;align-items:center}.button{display:inline-block;background:var(--ink);color:white;padding:8px 14px;border-radius:5px;text-decoration:none}.button:hover{background:var(--green)}nav{font-size:.92rem;margin:18px 0 26px}h3{margin:20px 0 6px;line-height:1.3}figure{margin:0;background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:9px}figure ol{margin:.45rem 0;padding-left:1.8rem}figure li{padding-left:.45rem;margin:.25rem 0}figure .miss{border-top:1px dashed #adbdac;padding-top:.42rem}.miss strong{color:#88472e}
+table{width:100%;border-collapse:collapse;font-size:.94rem;margin:18px 0 22px}th,td{padding:12px 14px;border:1px solid var(--line);vertical-align:top;text-align:left}th{background:var(--tint)}td{background:#fff}td:first-child{width:26%}ol,ul{padding-left:1.35rem}li{margin:.65rem 0}footer{margin-top:36px;padding-block:20px 44px;color:var(--muted);font-size:.9rem}
+@media(max-width:640px){table,tbody,tr,td{display:block}table{border:0}thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}tbody tr{border:1px solid var(--line);background:white;margin:.8rem 0;border-radius:6px;overflow:hidden}td,td:first-child{width:auto;border:0;padding:8px 13px}td:first-child{background:var(--tint);font-weight:650}td::before{content:attr(data-label);display:block;font-size:.76rem;font-weight:650;color:var(--muted)}td:empty{display:none}li{margin:.7rem 0}.intro{padding-bottom:18px}}
+@media print{header,nav,.links,footer{display:none}main{max-width:none;padding:0}h1{font-size:30pt}h2{font-size:17pt;break-after:avoid}figure,tr{break-inside:avoid}body{background:white;font-size:10pt}a{color:inherit}}
+</style></head><body><header><div class="top"><span class="wordmark">ReviewLab</span><a href="/#queue">Open dashboard →</a></div></header>
+<main><div class="intro"><p class="byline">Catarina Leandro · Independent AI product work sample · November 2026</p>
+<h1>Which comments should a moderator review first?</h1><div class="lede"><p>I gave a test queue two review slots. The model that reads a comment alongside its caption and any parent comment (Model C) put an affectionate joke about a corgi first and a reassuring message second. The only comment I labelled a violation came fifth out of 16. I read it as a statement about physical harm directed at another person. With only the text and caption, the speaker’s tone remained uncertain. The model raised an alert, but a reviewer with two slots would never have reached it.</p>
+</div>
+</div>
+<figure><figcaption>First blind test · 16-comment challenge group · two review slots · paraphrased examples</figcaption><ol><li>Affectionate comment about a corgi</li><li>Reassurance about someone’s appearance</li><li value="5" class="miss"><strong>Labelled violation</strong> · statement about one person striking another</li></ol></figure>
+<h2 id="decisions">Two decisions and what would change them</h2>
+<h3>Should context change which comments get flagged?</h3>
+<p><strong>Decision. Keep the baseline in the demo and test the context model offline.</strong> On ten validation comments, the comment-only challenger (B) flagged four of eight harmless comments. Adding the caption and parent comment (C) reduced that to one. Both caught the two labelled violations.</p>
+<p><strong>What would change my mind.</strong> On a fresh, independently labelled English sample, I would look for at least a 30% relative reduction versus the demo baseline (A) in the share of harmless comments flagged. I would set each model’s cutoff on validation to catch 90% of labelled violations, then check how many each actually catches on the fresh sample. C would also need to outperform B at comparable recall to justify collecting context. I would hold the decision open if serious cases were missed or the uncertainty was too large.</p>
+<h3>Should one physical-harm alert move to the front?</h3>
+<p><strong>Decision. Keep the original score order.</strong> Giving one existing alert priority moved the known example from fifth to first on replay. In each of two fresh 40-comment batches, both orders selected the same five comments.</p>
+<p><strong>What would change my mind.</strong> Freeze the rule and compare it with C’s original order on the same new queues, with identical scores, cutoffs and review slots. I would adopt it for a pilot only if more independently confirmed serious violations reached reviewers across batches, with no newly displaced critical cases. Count what enters and leaves the queue in every policy category. The rule changes order only, so the number of alerts stays the same.</p>
+
+<div class="links"><a class="button" href="/#models">Explore the model comparison</a><a href="/#policy">See the reviewer rubric</a></div>
+<nav aria-label="Case study sections"><a href="#stage">Product stage</a><a href="#evidence">Experiments</a><a href="#limitations">Limitations</a><a href="#choices">Design choices</a><a href="#pilot">Proposed TikTok pilot</a></nav>
+<h2 id="stage">Product stage and my role</h2>
+<p><strong>Phase 1 is in offline validation, before an operational pilot.</strong> I defined the review problem, built a working text prototype with AI coding assistance, and acted as the reviewer. I labelled 260 distinct archived TikTok comments across five batches and discussed ambiguous cases against a versioned rubric. Phase 2 would test visual evidence where the available text leaves a question unresolved.</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>What it reads and learns</th>
+<th>Why it’s here</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="Model"><strong>A · Toxicity baseline</strong></td>
+<td data-label="What it reads and learns">Reads only the comment. Learns from words and word fragments in Civil Comments with human toxicity ratings.</td>
+<td data-label="Why it’s here">Powers the demo and gives us a reference to beat.</td>
+</tr>
+<tr>
+<td data-label="Model"><strong>B · Comment only</strong></td>
+<td data-label="What it reads and learns">Reads only the comment. A pretrained sentence model learned from 26 examples labelled under the project rubric.</td>
+<td data-label="Why it’s here">Tests how well a model trained on the scoped policy labels can do with just the words the commenter wrote.</td>
+</tr>
+<tr>
+<td data-label="Model"><strong>C · Comment with context</strong></td>
+<td data-label="What it reads and learns">Uses the same starting model, 26 training examples and settings as B. It also reads the caption and, for replies, the comment being answered when available.</td>
+<td data-label="Why it’s here">Comparing C with B tests what surrounding text adds. Both are offline experiments.</td>
+</tr>
+</tbody></table>
+<h2 id="evidence">What I tested</h2>
+<table>
+<thead>
+<tr>
+<th>Experiment</th>
+<th>Observation</th>
+<th>Product decision</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="Experiment"><strong>Establish a baseline.</strong> Give keyword rules and a word-and-character text model the same 992 slots on 9,916 Civil Comments test examples.</td>
+<td data-label="Observation">Of 797 toxicity-labelled comments, the rules surfaced 253 and the text model surfaced 528. Recall at that budget rose from 31.7% to 66.2%.</td>
+<td data-label="Product decision">Use the text model as the demo baseline. Evaluate transfer separately because TikTok policy labels answer a different question.</td>
+</tr>
+<tr>
+<td data-label="Experiment"><strong>Test whether context helps.</strong> The first 100 TikTok comments all received a no-violation label, yet A flagged five. In the next 40, I used 26 for training, ten for validation and set aside four unresolved decisions.</td>
+<td data-label="Observation">With cutoffs chosen to catch both validation violations, B (comment only) flagged four of eight harmless comments. C (comment, caption and available parent reply) flagged one.</td>
+<td data-label="Product decision">Take C into blind testing with its cutoff frozen at 0.3933 rounded. Two validation positives gave little evidence about other kinds of harm.</td>
+</tr>
+<tr>
+<td data-label="Experiment"><strong>Test a fresh queue.</strong> I labelled 40 new comments before seeing C’s predictions.</td>
+<td data-label="Observation">C raised six alerts. One was the sole labelled violation and five were false alarms. One additional comment needed context. The violation ranked fifth for two review slots in the wording-selected group.</td>
+<td data-label="Product decision">Investigate ranking and context errors. One positive gives too little evidence to estimate detection reliably.</td>
+</tr>
+<tr>
+<td data-label="Experiment"><strong>Challenge the proposed fix.</strong> Give one already-flagged comment priority when its wording describes possible physical harm to a person. Compare both orders at identical capacity.</td>
+<td data-label="Observation">The rule moved the known example from fifth to first in replay. On two subsequent 40-comment batches, both methods picked the same five comments per batch. In the last batch, a revised human label left one violation, ranked fourth for two slots.</td>
+<td data-label="Product decision">Keep Model A in the demo and retain C’s original order as the offline comparison. The replay motivated a hypothesis. The fresh comparisons have yet to demonstrate an improvement.</td>
+</tr>
+</tbody></table>
+<h2 id="limitations">Limitations</h2>
+<ul>
+<li><strong>Whose judgement is measured.</strong> One reviewer applied a scoped interpretation of TikTok’s public guidelines. Several decisions were discussed with AI assistance. The last batch keeps its original blind labels and a later revision separate. Independent reviewers could reasonably disagree about the fifth-ranked comment.</li>
+<li><strong>What the samples cover.</strong> Short English comments from public archives, including groups selected for particular wording, cannot establish how often violations occur across TikTok. Civil Comments measures toxicity. TikTok examples measure a policy judgement. The two benchmarks have different denominators and cannot establish platform-wide accuracy.</li>
+<li><strong>How much evidence we have.</strong> The context-model validation split had just two violations, both about physical harm. Both helped determine the cutoff. The first blind batch contained one labelled violation. On the Civil Comments benchmark, the demo model also flagged 23.3% of non-toxic comments in the identity-term slice, versus 11.2% for rules. This measures wording and gives reviewers a reason to inspect errors involving identity terms.</li>
+<li><strong>What the prototype can measure.</strong> Captions and some parent comments are available. Video, audio, a full thread and many tone cues are missing. Review capacity is simulated. Reviewer time, appeals, harm reduction and performance across languages still need measurement in a pilot.</li>
+</ul>
+<h2 id="choices">Assumptions behind the design</h2>
+<table>
+<thead>
+<tr>
+<th>Choice</th>
+<th>Why I made it</th>
+<th>How I would check it</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="Choice">Start with English comments and a human decision</td>
+<td data-label="Why I made it">I could review English comments against an English-language rubric. A reviewer can use the caption and parent reply to distinguish criticism, quotation and targeted abuse, or request more evidence.</td>
+<td data-label="How I would check it">Observe reviewers resolving the same cases, record what evidence they open and measure time and agreement.</td>
+</tr>
+<tr>
+<td data-label="Choice">Compare simple rules, A, B and C</td>
+<td data-label="Why I made it">Rules are easy to audit. A provides a low-cost reference. B and C use the same small sentence model, training rows and settings, so their comparison tests the value of adding context.</td>
+<td data-label="How I would check it">Freeze the models and cutoffs. Check false alerts and missed violations across policy types, language varieties and missing context.</td>
+</tr>
+<tr>
+<td data-label="Choice">Use four reviewer decisions</td>
+<td data-label="Why I made it">“Needs context” and “needs policy review” describe different next actions. Forcing either into a yes/no training label would teach the model an unsupported answer.</td>
+<td data-label="How I would check it">Have independent reviewers label a fresh sample and resolve disagreements with a policy specialist. Count escalations in workload.</td>
+</tr>
+<tr>
+<td data-label="Choice">Measure capture at a fixed budget</td>
+<td data-label="Why I made it">An alert helps only if a reviewer can reach it. I used roughly 10% of a batch as an experimental capacity assumption. Actual capacity depends on review time and severity.</td>
+<td data-label="How I would check it">Ask Operations for staffing and handling-time distributions. Compare violations caught per reviewer-hour and time to review serious harm.</td>
+</tr>
+<tr>
+<td data-label="Choice">Lock examples and predictions before revealing test results</td>
+<td data-label="Why I made it">Keeping creators, conversations and similar comments together reduces leakage. A rule designed after inspecting a mistake needs fresh evidence.</td>
+<td data-label="How I would check it">Compare queues on the same unseen items. Count violations gained and displaced. Inspect harmless comments that move ahead of a violation.</td>
+</tr>
+</tbody></table>
+<h2 id="pilot">How I would apply this at TikTok</h2>
+<p>I would start with <strong>one English-language comment-review queue</strong> and a narrow question for the Content Ecosystem team. Can a reviewer reach actionable harassment sooner while preserving coverage of other serious harm? Earlier review could benefit the person targeted. An unnecessary flag costs reviewer time, and an incorrect enforcement decision can limit a creator’s reach and take time to appeal. Each has a different measurement.</p>
+<ol>
+<li><strong>Validate the workflow.</strong> With Operations, shadow reviewers across shifts and map the path from report to decision. With Policy and Trust &amp; Safety, agree on the scope, escalation reasons and existing urgent routes. The deliverable is a reviewer-tested rubric and a measured capacity baseline.</li>
+<li><strong>Set the offline release criteria.</strong> With Data Science, collect a randomly sampled queue plus a separate challenge set. Double-label a subset, adjudicate disagreements and size each severity slice before testing. Set the required serious-harm coverage, minimum worthwhile gain and acceptable uncertainty for each decision before opening the test.</li>
+<li><strong>Run in shadow mode.</strong> With Engineering, score the same incoming cases alongside the existing queue. Measure processing latency, cost, missing context and reviewer disagreement. Investigate any newly displaced serious violation. Advance only when Policy and Operations accept the safety and workload results.</li>
+<li><strong>Pilot with a small reviewer team.</strong> Compare matched shifts at equal staffing. Track violations caught per reviewer-hour, time to serious cases, reversals after appeal and reviewer overrides. Pause the pilot and restore the previous queue if the agreed serious-harm or creator-impact limits are crossed. Audit a sample below the cutoff for missed violations. If the pilot meets its safety and workload criteria across shifts, expand gradually and keep monitoring outcomes by policy version.</li>
+<li><strong>Expand one capability at a time.</strong> For a second language, use local policy experts, native-speaking annotators and a separate market evaluation. For visual review, start with one category and licensed image-caption pairs. A ResNet50 baseline could identify an object such as a knife. A reviewer would still need the surrounding activity to distinguish cooking from a threat. Compare text alone with text plus visual evidence before adding it to the queue.</li>
+</ol>
+<h2 id="explore">Explore the prototype</h2>
+<ul>
+<li><p>Download the one-page application work sample. <a href="https://github.com/catarinaleandro/reviewlab-work-sample/blob/main/Catarina-Leandro-ReviewLab-Work-Sample.pdf">PDF summary</a></p>
+</li>
+<li><p>Inspect the source, evaluation code and the published review outcomes for all five batches. <a href="https://github.com/catarinaleandro/reviewlab-work-sample">Public GitHub repository</a> · <a href="https://github.com/catarinaleandro/reviewlab-work-sample/blob/main/evaluation.json">TikTok evaluation results</a></p>
+</li>
+<li><p>Adjust the review budget and inspect which cases enter the queue. <a href="https://reviewlab-content-moderation.vercel.app/#queue">Review queue</a></p>
+</li>
+<li><p>Compare the rules and text models at the same capacity. <a href="https://reviewlab-content-moderation.vercel.app/#experiments">Experiment lab</a></p>
+</li>
+<li><p>Inspect the policy boundaries, reviewer actions and examples. <a href="https://reviewlab-content-moderation.vercel.app/#policy">Policy guide</a></p>
+</li>
+<li><p>Compare comment-only and contextual inputs on the first development split. <a href="https://reviewlab-content-moderation.vercel.app/#models">Model choices</a></p>
+</li>
+</ul>
+<p>Sources include <a href="https://www.tensorflow.org/datasets/catalog/civil_comments">Civil Comments</a>, <a href="https://www.tiktok.com/safety/en/policies-and-engagement/safety-civility">TikTok’s Safety and Civility guidelines</a>, <a href="https://huggingface.co/datasets/crawlora-net/tiktok-product-video-comments">Crawlora’s TikTok archive</a> and <a href="https://huggingface.co/datasets/Shofo/shofo-tiktok-general-small">Shofo’s TikTok archive</a>. ReviewLab is an independent prototype using public sources.</p>
+</main><footer>ReviewLab · Catarina Leandro</footer></body></html>

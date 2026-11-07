@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="ReviewLab: an evaluated AI prototype for prioritising human content review."><title>ReviewLab · Content Moderation</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a href="#queue" class="brand" aria-label="ReviewLab home"><span class="brand-mark">r<span>l</span></span><span>reviewlab<span class="brand-dot">.</span></span></a>
+    <div class="workspace"><span class="workspace-icon">C</span><div>Catarina’s workspace<small>Content moderation prototype</small></div></div>
+    <p class="nav-label">WORKSPACE</p>
+    <nav aria-label="Main navigation">
+      <button data-view="queue" class="nav-item active"><span class="nav-icon">▤</span>Review queue<span class="nav-pill" id="nav-count">—</span></button>
+      <button data-view="experiments" class="nav-item"><span class="nav-icon">◫</span>Experiment lab</button>
+      <button data-view="errors" class="nav-item"><span class="nav-icon">◇</span>Error review</button>
+      <button data-view="pilot" class="nav-item"><span class="nav-icon">◉</span>TikTok results</button>
+      <button data-view="models" class="nav-item"><span class="nav-icon">⊞</span>Model choices</button>
+      <button data-view="import" class="nav-item"><span class="nav-icon">↥</span>Import & score</button>
+      <button data-view="policy" class="nav-item"><span class="nav-icon">§</span>Policy guide</button>
+      <button data-view="method" class="nav-item"><span class="nav-icon">◎</span>Methodology</button>
+    </nav>
+    <div class="phase-card"><span class="tiny-dot"></span>PHASE 01<span class="phase-title">Text, with context.</span><p>Find more harmful comments within the same review budget.</p><div class="phase-rule"></div><span class="next-phase">Up next <span>Visual evidence ↗</span></span></div>
+    <div class="sidebar-bottom"><span class="avatar">CL</span><div>Catarina Leandro<small>Product owner</small></div><span class="online-dot"></span></div>
+  </aside>
+  <main>
+    <header class="topbar"><span class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb-view">Review queue</strong></span><div class="topbar-right"><span class="status-dot"></span><span>Research prototype</span><button id="export-button" class="button small">Export decisions ↗</button></div></header>
+    <div class="content" id="content"><div class="loading"><span class="loader"></span><h1>Preparing your review workspace</h1><p>Loading the trained model and measured benchmark.</p></div></div>
+    <footer><a href="work-sample.html">Product case study · Catarina Leandro</a><span>ReviewLab · Phase 1 / v1.4</span></footer>
+  </main>
+</div>
+<div id="toast" role="status" class="toast hidden"></div>
+<script src="engine.js"></script><script src="policy.js"></script><script src="policy-view.js"></script><script src="pilot-data.js"></script><script src="pilot-view.js"></script><script src="context-plan.js"></script><script src="context-results.js"></script><script src="model-choices.js"></script><script src="app.js"></script>
+</body></html>
