@@ -1,0 +1,5 @@
+.git
+.openai
+.venv
+__pycache__
+ml/model.joblib

@@ -1,0 +1,2740 @@
+{
+  "project": "ReviewLab",
+  "unit": "Archived English TikTok comment",
+  "labels": {
+    "N": "No violation",
+    "V": "Violation",
+    "U": "Needs context",
+    "P": "Policy review"
+  },
+  "scope": "One reviewer, 260 distinct comments, five batches. Ranks are within the saved comparison cohort. In the final batch, human_label is the revised label and original_blind_label preserves the original submission. Scores are model outputs.",
+  "batches": [
+    {
+      "stage": "Calibration on the original 100 comments",
+      "model": "A",
+      "rows": [
+        {
+          "id": "TT001",
+          "label": "N",
+          "scores": {
+            "word": 0.019927085067379707,
+            "word_char": 0.008521854391556435,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 91,
+            "word": 88,
+            "rules": 27
+          }
+        },
+        {
+          "id": "TT002",
+          "label": "N",
+          "scores": {
+            "word": 0.8844822871358081,
+            "word_char": 0.8757766356782295,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 2,
+            "word": 1,
+            "rules": 56
+          }
+        },
+        {
+          "id": "TT003",
+          "label": "N",
+          "scores": {
+            "word": 0.0287808433725241,
+            "word_char": 0.028354564724937793,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 34,
+            "word": 62,
+            "rules": 6
+          }
+        },
+        {
+          "id": "TT004",
+          "label": "N",
+          "scores": {
+            "word": 0.07938448205077171,
+            "word_char": 0.15406235898403997,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 6,
+            "word": 11,
+            "rules": 74
+          }
+        },
+        {
+          "id": "TT005",
+          "label": "N",
+          "scores": {
+            "word": 0.02992506755684466,
+            "word_char": 0.020659525791891533,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 46,
+            "word": 56,
+            "rules": 95
+          }
+        },
+        {
+          "id": "TT006",
+          "label": "N",
+          "scores": {
+            "word": 0.03651761018497072,
+            "word_char": 0.012435187799117736,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 74,
+            "word": 43,
+            "rules": 35
+          }
+        },
+        {
+          "id": "TT007",
+          "label": "N",
+          "scores": {
+            "word": 0.0364723185660249,
+            "word_char": 0.031191080488036413,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 31,
+            "word": 44,
+            "rules": 71
+          }
+        },
+        {
+          "id": "TT008",
+          "label": "N",
+          "scores": {
+            "word": 0.021012772602697172,
+            "word_char": 0.01441727476838426,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 65,
+            "word": 82,
+            "rules": 41
+          }
+        },
+        {
+          "id": "TT009",
+          "label": "N",
+          "scores": {
+            "word": 0.05848902953077515,
+            "word_char": 0.0429909291302934,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 22,
+            "word": 21,
+            "rules": 39
+          }
+        },
+        {
+          "id": "TT010",
+          "label": "N",
+          "scores": {
+            "word": 0.062361763388587343,
+            "word_char": 0.05134855293073012,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 15,
+            "word": 18,
+            "rules": 30
+          }
+        },
+        {
+          "id": "TT011",
+          "label": "N",
+          "scores": {
+            "word": 0.0813916726764178,
+            "word_char": 0.04103001837361781,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 23,
+            "word": 10,
+            "rules": 91
+          }
+        },
+        {
+          "id": "TT012",
+          "label": "N",
+          "scores": {
+            "word": 0.024275788877443562,
+            "word_char": 0.014415455807888888,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 66,
+            "word": 74,
+            "rules": 65
+          }
+        },
+        {
+          "id": "TT013",
+          "label": "N",
+          "scores": {
+            "word": 0.024630734039645955,
+            "word_char": 0.005719879264051634,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 96,
+            "word": 72,
+            "rules": 59
+          }
+        },
+        {
+          "id": "TT014",
+          "label": "N",
+          "scores": {
+            "word": 0.04829167893315854,
+            "word_char": 0.033314175496046455,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 27,
+            "word": 32,
+            "rules": 51
+          }
+        },
+        {
+          "id": "TT015",
+          "label": "N",
+          "scores": {
+            "word": 0.05452974212966521,
+            "word_char": 0.039920204628807666,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 25,
+            "word": 23,
+            "rules": 92
+          }
+        },
+        {
+          "id": "TT016",
+          "label": "N",
+          "scores": {
+            "word": 0.04402139389908651,
+            "word_char": 0.009859500115844383,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 84,
+            "word": 34,
+            "rules": 57
+          }
+        },
+        {
+          "id": "TT017",
+          "label": "N",
+          "scores": {
+            "word": 0.05428453134407296,
+            "word_char": 0.018311652588073428,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 54,
+            "word": 24,
+            "rules": 45
+          }
+        },
+        {
+          "id": "TT018",
+          "label": "N",
+          "scores": {
+            "word": 0.03738401886739713,
+            "word_char": 0.024001787075052846,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 38,
+            "word": 41,
+            "rules": 10
+          }
+        },
+        {
+          "id": "TT019",
+          "label": "N",
+          "scores": {
+            "word": 0.048755988523231646,
+            "word_char": 0.018337428585417696,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 52,
+            "word": 31,
+            "rules": 80
+          }
+        },
+        {
+          "id": "TT020",
+          "label": "N",
+          "scores": {
+            "word": 0.033140520192147305,
+            "word_char": 0.011298925813313617,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 80,
+            "word": 47,
+            "rules": 18
+          }
+        },
+        {
+          "id": "TT021",
+          "label": "N",
+          "scores": {
+            "word": 0.03552112248978749,
+            "word_char": 0.07753127395440354,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 9,
+            "word": 45,
+            "rules": 8
+          }
+        },
+        {
+          "id": "TT022",
+          "label": "N",
+          "scores": {
+            "word": 0.02648331122830772,
+            "word_char": 0.008910760887078109,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 88,
+            "word": 70,
+            "rules": 89
+          }
+        },
+        {
+          "id": "TT023",
+          "label": "N",
+          "scores": {
+            "word": 0.04034136588844403,
+            "word_char": 0.019872125328878137,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 49,
+            "word": 36,
+            "rules": 62
+          }
+        },
+        {
+          "id": "TT024",
+          "label": "N",
+          "scores": {
+            "word": 0.11076418981820892,
+            "word_char": 0.023980834926974552,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 39,
+            "word": 6,
+            "rules": 19
+          }
+        },
+        {
+          "id": "TT025",
+          "label": "N",
+          "scores": {
+            "word": 0.018639385683753232,
+            "word_char": 0.006974901623215674,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 94,
+            "word": 91,
+            "rules": 15
+          }
+        },
+        {
+          "id": "TT026",
+          "label": "N",
+          "scores": {
+            "word": 0.071751075839097,
+            "word_char": 0.0686763611454287,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 11,
+            "word": 14,
+            "rules": 68
+          }
+        },
+        {
+          "id": "TT027",
+          "label": "N",
+          "scores": {
+            "word": 0.028758709316238952,
+            "word_char": 0.021502860843872214,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 44,
+            "word": 63,
+            "rules": 14
+          }
+        },
+        {
+          "id": "TT028",
+          "label": "N",
+          "scores": {
+            "word": 0.03220868443833094,
+            "word_char": 0.02158267136823923,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 43,
+            "word": 50,
+            "rules": 26
+          }
+        },
+        {
+          "id": "TT029",
+          "label": "N",
+          "scores": {
+            "word": 0.08199738789155804,
+            "word_char": 0.09030959298164508,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 8,
+            "word": 9,
+            "rules": 72
+          }
+        },
+        {
+          "id": "TT030",
+          "label": "N",
+          "scores": {
+            "word": 0.009972827808242768,
+            "word_char": 0.004814668549685781,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 98,
+            "word": 99,
+            "rules": 42
+          }
+        },
+        {
+          "id": "TT031",
+          "label": "N",
+          "scores": {
+            "word": 0.05331673866295406,
+            "word_char": 0.019985804743604233,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 48,
+            "word": 26,
+            "rules": 37
+          }
+        },
+        {
+          "id": "TT032",
+          "label": "N",
+          "scores": {
+            "word": 0.04607792468112857,
+            "word_char": 0.022403774856546186,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 42,
+            "word": 33,
+            "rules": 53
+          }
+        },
+        {
+          "id": "TT033",
+          "label": "N",
+          "scores": {
+            "word": 0.05637738520736583,
+            "word_char": 0.03945275263467467,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 26,
+            "word": 22,
+            "rules": 79
+          }
+        },
+        {
+          "id": "TT034",
+          "label": "N",
+          "scores": {
+            "word": 0.02170875161367229,
+            "word_char": 0.015555264104741314,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 60,
+            "word": 79,
+            "rules": 36
+          }
+        },
+        {
+          "id": "TT035",
+          "label": "N",
+          "scores": {
+            "word": 0.020242059209607595,
+            "word_char": 0.008491767805001032,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 92,
+            "word": 87,
+            "rules": 48
+          }
+        },
+        {
+          "id": "TT036",
+          "label": "N",
+          "scores": {
+            "word": 0.1644469228516743,
+            "word_char": 0.3763133660896496,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 3,
+            "word": 4,
+            "rules": 69
+          }
+        },
+        {
+          "id": "TT037",
+          "label": "N",
+          "scores": {
+            "word": 0.059112085181398,
+            "word_char": 0.03123401287140775,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 30,
+            "word": 20,
+            "rules": 7
+          }
+        },
+        {
+          "id": "TT038",
+          "label": "N",
+          "scores": {
+            "word": 0.07725921857763256,
+            "word_char": 0.06155279036029916,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 13,
+            "word": 13,
+            "rules": 81
+          }
+        },
+        {
+          "id": "TT039",
+          "label": "N",
+          "scores": {
+            "word": 0.05111764938489788,
+            "word_char": 0.04438414704533515,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 20,
+            "word": 28,
+            "rules": 96
+          }
+        },
+        {
+          "id": "TT040",
+          "label": "N",
+          "scores": {
+            "word": 0.06777492319798083,
+            "word_char": 0.06397467918654823,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 12,
+            "word": 16,
+            "rules": 73
+          }
+        },
+        {
+          "id": "TT041",
+          "label": "N",
+          "scores": {
+            "word": 0.018050676771183775,
+            "word_char": 0.014975649910220289,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 63,
+            "word": 92,
+            "rules": 100
+          }
+        },
+        {
+          "id": "TT042",
+          "label": "N",
+          "scores": {
+            "word": 0.03220868443833094,
+            "word_char": 0.012531193786419663,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 72,
+            "word": 51,
+            "rules": 43
+          }
+        },
+        {
+          "id": "TT043",
+          "label": "N",
+          "scores": {
+            "word": 0.022600778452236403,
+            "word_char": 0.015122607582990978,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 61,
+            "word": 78,
+            "rules": 58
+          }
+        },
+        {
+          "id": "TT044",
+          "label": "N",
+          "scores": {
+            "word": 0.03220868443833094,
+            "word_char": 0.013305688709007165,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 71,
+            "word": 52,
+            "rules": 52
+          }
+        },
+        {
+          "id": "TT045",
+          "label": "N",
+          "scores": {
+            "word": 0.0318085829017618,
+            "word_char": 0.01832513413602097,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 53,
+            "word": 54,
+            "rules": 46
+          }
+        },
+        {
+          "id": "TT046",
+          "label": "N",
+          "scores": {
+            "word": 0.030417722791389674,
+            "word_char": 0.011649728895416971,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 78,
+            "word": 55,
+            "rules": 64
+          }
+        },
+        {
+          "id": "TT047",
+          "label": "N",
+          "scores": {
+            "word": 0.028297963499322707,
+            "word_char": 0.0200892652260054,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 47,
+            "word": 67,
+            "rules": 50
+          }
+        },
+        {
+          "id": "TT048",
+          "label": "N",
+          "scores": {
+            "word": 0.0492260191030212,
+            "word_char": 0.07575381973610615,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 10,
+            "word": 29,
+            "rules": 83
+          }
+        },
+        {
+          "id": "TT049",
+          "label": "N",
+          "scores": {
+            "word": 0.0372679373733276,
+            "word_char": 0.015025049460010787,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 62,
+            "word": 42,
+            "rules": 31
+          }
+        },
+        {
+          "id": "TT050",
+          "label": "N",
+          "scores": {
+            "word": 0.02775731132365237,
+            "word_char": 0.01431585645753893,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 68,
+            "word": 68,
+            "rules": 67
+          }
+        },
+        {
+          "id": "TT051",
+          "label": "N",
+          "scores": {
+            "word": 0.02052677053519389,
+            "word_char": 0.008823240984755405,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 89,
+            "word": 85,
+            "rules": 70
+          }
+        },
+        {
+          "id": "TT052",
+          "label": "N",
+          "scores": {
+            "word": 0.041963280811512814,
+            "word_char": 0.024942310529308245,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 35,
+            "word": 35,
+            "rules": 82
+          }
+        },
+        {
+          "id": "TT053",
+          "label": "N",
+          "scores": {
+            "word": 0.028315814347245317,
+            "word_char": 0.014079003039960947,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 69,
+            "word": 66,
+            "rules": 5
+          }
+        },
+        {
+          "id": "TT054",
+          "label": "N",
+          "scores": {
+            "word": 0.03281567382589719,
+            "word_char": 0.015577263839260655,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 59,
+            "word": 48,
+            "rules": 86
+          }
+        },
+        {
+          "id": "TT055",
+          "label": "N",
+          "scores": {
+            "word": 0.11096331961128109,
+            "word_char": 0.058527839244528174,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 14,
+            "word": 5,
+            "rules": 4
+          }
+        },
+        {
+          "id": "TT056",
+          "label": "N",
+          "scores": {
+            "word": 0.013233623531612759,
+            "word_char": 0.004193363429635394,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 99,
+            "word": 97,
+            "rules": 29
+          }
+        },
+        {
+          "id": "TT057",
+          "label": "N",
+          "scores": {
+            "word": 0.03981171668319988,
+            "word_char": 0.029248859846915425,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 33,
+            "word": 39,
+            "rules": 2
+          }
+        },
+        {
+          "id": "TT058",
+          "label": "N",
+          "scores": {
+            "word": 0.02842308149022026,
+            "word_char": 0.017612622443917876,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 55,
+            "word": 65,
+            "rules": 63
+          }
+        },
+        {
+          "id": "TT059",
+          "label": "N",
+          "scores": {
+            "word": 0.023742470851626736,
+            "word_char": 0.0166964919499396,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 57,
+            "word": 75,
+            "rules": 90
+          }
+        },
+        {
+          "id": "TT060",
+          "label": "N",
+          "scores": {
+            "word": 0.021529148304078722,
+            "word_char": 0.012131590015789074,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 76,
+            "word": 81,
+            "rules": 24
+          }
+        },
+        {
+          "id": "TT061",
+          "label": "N",
+          "scores": {
+            "word": 0.014007758634007668,
+            "word_char": 0.0050666155426065465,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 97,
+            "word": 96,
+            "rules": 87
+          }
+        },
+        {
+          "id": "TT062",
+          "label": "N",
+          "scores": {
+            "word": 0.051733035066126094,
+            "word_char": 0.04711548180183582,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 19,
+            "word": 27,
+            "rules": 60
+          }
+        },
+        {
+          "id": "TT063",
+          "label": "N",
+          "scores": {
+            "word": 0.09413954489145669,
+            "word_char": 0.19837933691876,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 5,
+            "word": 7,
+            "rules": 85
+          }
+        },
+        {
+          "id": "TT064",
+          "label": "N",
+          "scores": {
+            "word": 0.06980636344242858,
+            "word_char": 0.0486329946053768,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 17,
+            "word": 15,
+            "rules": 11
+          }
+        },
+        {
+          "id": "TT065",
+          "label": "N",
+          "scores": {
+            "word": 0.06275993858768168,
+            "word_char": 0.04795776701250469,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 18,
+            "word": 17,
+            "rules": 49
+          }
+        },
+        {
+          "id": "TT066",
+          "label": "N",
+          "scores": {
+            "word": 0.3647249093376489,
+            "word_char": 0.35322392304787287,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 4,
+            "word": 3,
+            "rules": 84
+          }
+        },
+        {
+          "id": "TT067",
+          "label": "N",
+          "scores": {
+            "word": 0.017275099277769147,
+            "word_char": 0.01090338590887833,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 82,
+            "word": 93,
+            "rules": 98
+          }
+        },
+        {
+          "id": "TT068",
+          "label": "N",
+          "scores": {
+            "word": 0.04033989741691181,
+            "word_char": 0.014366798388400253,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 67,
+            "word": 37,
+            "rules": 17
+          }
+        },
+        {
+          "id": "TT069",
+          "label": "N",
+          "scores": {
+            "word": 0.048985988163460524,
+            "word_char": 0.04062018024897169,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 24,
+            "word": 30,
+            "rules": 34
+          }
+        },
+        {
+          "id": "TT070",
+          "label": "N",
+          "scores": {
+            "word": 0.01451286899614236,
+            "word_char": 0.00910309405503647,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 87,
+            "word": 95,
+            "rules": 44
+          }
+        },
+        {
+          "id": "TT071",
+          "label": "N",
+          "scores": {
+            "word": 0.05411462223457269,
+            "word_char": 0.04978042448498712,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 16,
+            "word": 25,
+            "rules": 76
+          }
+        },
+        {
+          "id": "TT072",
+          "label": "N",
+          "scores": {
+            "word": 0.029117465237601232,
+            "word_char": 0.0214197572555577,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 45,
+            "word": 60,
+            "rules": 40
+          }
+        },
+        {
+          "id": "TT073",
+          "label": "N",
+          "scores": {
+            "word": 0.028585691854782134,
+            "word_char": 0.03262654269402454,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 28,
+            "word": 64,
+            "rules": 88
+          }
+        },
+        {
+          "id": "TT074",
+          "label": "N",
+          "scores": {
+            "word": 0.07908364312574505,
+            "word_char": 0.09644584499543765,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 7,
+            "word": 12,
+            "rules": 47
+          }
+        },
+        {
+          "id": "TT075",
+          "label": "N",
+          "scores": {
+            "word": 0.040185728001868384,
+            "word_char": 0.0313909354379085,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 29,
+            "word": 38,
+            "rules": 32
+          }
+        },
+        {
+          "id": "TT076",
+          "label": "N",
+          "scores": {
+            "word": 0.08429578144500942,
+            "word_char": 0.043854149950840374,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 21,
+            "word": 8,
+            "rules": 9
+          }
+        },
+        {
+          "id": "TT077",
+          "label": "N",
+          "scores": {
+            "word": 0.038397804459206056,
+            "word_char": 0.023125069187173074,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 41,
+            "word": 40,
+            "rules": 61
+          }
+        },
+        {
+          "id": "TT078",
+          "label": "N",
+          "scores": {
+            "word": 0.022636876442972315,
+            "word_char": 0.013661091749206782,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 70,
+            "word": 77,
+            "rules": 33
+          }
+        },
+        {
+          "id": "TT079",
+          "label": "N",
+          "scores": {
+            "word": 0.029319807534872427,
+            "word_char": 0.015974222689146073,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 58,
+            "word": 59,
+            "rules": 94
+          }
+        },
+        {
+          "id": "TT080",
+          "label": "N",
+          "scores": {
+            "word": 0.021630421166772964,
+            "word_char": 0.014639084350571216,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 64,
+            "word": 80,
+            "rules": 77
+          }
+        },
+        {
+          "id": "TT081",
+          "label": "N",
+          "scores": {
+            "word": 0.033597935416499074,
+            "word_char": 0.009693305355512749,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 86,
+            "word": 46,
+            "rules": 25
+          }
+        },
+        {
+          "id": "TT082",
+          "label": "N",
+          "scores": {
+            "word": 0.026187468823863216,
+            "word_char": 0.009752252169036007,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 85,
+            "word": 71,
+            "rules": 78
+          }
+        },
+        {
+          "id": "TT083",
+          "label": "N",
+          "scores": {
+            "word": 0.03220868443833094,
+            "word_char": 0.019298167881993362,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 51,
+            "word": 53,
+            "rules": 97
+          }
+        },
+        {
+          "id": "TT084",
+          "label": "N",
+          "scores": {
+            "word": 0.010937989800074249,
+            "word_char": 0.00266606359318662,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 100,
+            "word": 98,
+            "rules": 3
+          }
+        },
+        {
+          "id": "TT085",
+          "label": "N",
+          "scores": {
+            "word": 0.00849662068969582,
+            "word_char": 0.006045410541832177,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 95,
+            "word": 100,
+            "rules": 99
+          }
+        },
+        {
+          "id": "TT086",
+          "label": "N",
+          "scores": {
+            "word": 0.02755919268346277,
+            "word_char": 0.017013385437093475,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 56,
+            "word": 69,
+            "rules": 16
+          }
+        },
+        {
+          "id": "TT087",
+          "label": "N",
+          "scores": {
+            "word": 0.024434128444016438,
+            "word_char": 0.008535983018126152,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 90,
+            "word": 73,
+            "rules": 21
+          }
+        },
+        {
+          "id": "TT088",
+          "label": "N",
+          "scores": {
+            "word": 0.015037953528350495,
+            "word_char": 0.010943384988213479,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 81,
+            "word": 94,
+            "rules": 66
+          }
+        },
+        {
+          "id": "TT089",
+          "label": "N",
+          "scores": {
+            "word": 0.029325956930563526,
+            "word_char": 0.011634148782584333,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 79,
+            "word": 58,
+            "rules": 38
+          }
+        },
+        {
+          "id": "TT090",
+          "label": "N",
+          "scores": {
+            "word": 0.029325956930563526,
+            "word_char": 0.01250319914932931,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 73,
+            "word": 57,
+            "rules": 13
+          }
+        },
+        {
+          "id": "TT091",
+          "label": "N",
+          "scores": {
+            "word": 0.03220868443833094,
+            "word_char": 0.029406389668667144,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 32,
+            "word": 49,
+            "rules": 22
+          }
+        },
+        {
+          "id": "TT092",
+          "label": "N",
+          "scores": {
+            "word": 0.020363398750765607,
+            "word_char": 0.012352236446669045,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 75,
+            "word": 86,
+            "rules": 93
+          }
+        },
+        {
+          "id": "TT093",
+          "label": "N",
+          "scores": {
+            "word": 0.028798935435444265,
+            "word_char": 0.012090046751148597,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 77,
+            "word": 61,
+            "rules": 12
+          }
+        },
+        {
+          "id": "TT094",
+          "label": "N",
+          "scores": {
+            "word": 0.019878378500256904,
+            "word_char": 0.007298646027492569,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 93,
+            "word": 89,
+            "rules": 20
+          }
+        },
+        {
+          "id": "TT095",
+          "label": "N",
+          "scores": {
+            "word": 0.02351439961860479,
+            "word_char": 0.02356908675814303,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 40,
+            "word": 76,
+            "rules": 55
+          }
+        },
+        {
+          "id": "TT096",
+          "label": "N",
+          "scores": {
+            "word": 0.06090218025110574,
+            "word_char": 0.024417425097726136,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 36,
+            "word": 19,
+            "rules": 54
+          }
+        },
+        {
+          "id": "TT097",
+          "label": "N",
+          "scores": {
+            "word": 0.86840035019018,
+            "word_char": 0.9768751582974063,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 1,
+            "word": 2,
+            "rules": 75
+          }
+        },
+        {
+          "id": "TT098",
+          "label": "N",
+          "scores": {
+            "word": 0.019273477653146978,
+            "word_char": 0.010161775871118193,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 83,
+            "word": 90,
+            "rules": 23
+          }
+        },
+        {
+          "id": "TT099",
+          "label": "N",
+          "scores": {
+            "word": 0.020730300396914012,
+            "word_char": 0.024204429762786323,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 37,
+            "word": 83,
+            "rules": 1
+          }
+        },
+        {
+          "id": "TT100",
+          "label": "N",
+          "scores": {
+            "word": 0.020530071223167558,
+            "word_char": 0.019770415262419093,
+            "rules": 0
+          },
+          "ranks": {
+            "word_char": 50,
+            "word": 84,
+            "rules": 28
+          }
+        }
+      ]
+    },
+    {
+      "stage": "Policy training and development validation",
+      "rows": [
+        {
+          "id": "TT101",
+          "label": "V",
+          "split": "training"
+        },
+        {
+          "id": "TT102",
+          "label": "N",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.3871336838468652,
+            "B": 0.2882038950920105,
+            "C": 0.3506369888782501
+          }
+        },
+        {
+          "id": "TT103",
+          "label": "P",
+          "split": "unresolved"
+        },
+        {
+          "id": "TT104",
+          "label": "P",
+          "split": "unresolved"
+        },
+        {
+          "id": "TT105",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT106",
+          "label": "N",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.1601422783882982,
+            "B": 0.23112304508686066,
+            "C": 0.2714470624923706
+          }
+        },
+        {
+          "id": "TT107",
+          "label": "N",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.1611386773182208,
+            "B": 0.35295233130455017,
+            "C": 0.424184650182724
+          }
+        },
+        {
+          "id": "TT108",
+          "label": "V",
+          "split": "training"
+        },
+        {
+          "id": "TT109",
+          "label": "V",
+          "split": "training"
+        },
+        {
+          "id": "TT110",
+          "label": "N",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.030039408651346286,
+            "B": 0.2654184103012085,
+            "C": 0.24992495775222778
+          }
+        },
+        {
+          "id": "TT111",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT112",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT113",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT114",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT115",
+          "label": "V",
+          "split": "training"
+        },
+        {
+          "id": "TT116",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT117",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT118",
+          "label": "N",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.5372532473092153,
+            "B": 0.26519012451171875,
+            "C": 0.2072947472333908
+          }
+        },
+        {
+          "id": "TT119",
+          "label": "U",
+          "split": "unresolved"
+        },
+        {
+          "id": "TT120",
+          "label": "V",
+          "split": "training"
+        },
+        {
+          "id": "TT121",
+          "label": "N",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.21375829683253106,
+            "B": 0.32533979415893555,
+            "C": 0.3553485572338104
+          }
+        },
+        {
+          "id": "TT122",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT123",
+          "label": "V",
+          "split": "training"
+        },
+        {
+          "id": "TT124",
+          "label": "V",
+          "split": "training"
+        },
+        {
+          "id": "TT125",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT126",
+          "label": "N",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.031024032949724653,
+            "B": 0.2057398110628128,
+            "C": 0.2270403504371643
+          }
+        },
+        {
+          "id": "TT127",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT128",
+          "label": "N",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.9898553482235711,
+            "B": 0.29208678007125854,
+            "C": 0.22263719141483307
+          }
+        },
+        {
+          "id": "TT129",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT130",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT131",
+          "label": "V",
+          "split": "training"
+        },
+        {
+          "id": "TT132",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT133",
+          "label": "V",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.46237388173936067,
+            "B": 0.49311187863349915,
+            "C": 0.46061480045318604
+          }
+        },
+        {
+          "id": "TT134",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT135",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT136",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT137",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT138",
+          "label": "N",
+          "split": "training"
+        },
+        {
+          "id": "TT139",
+          "label": "V",
+          "split": "validation",
+          "validation_scores": {
+            "A": 0.18201750481483422,
+            "B": 0.28435513377189636,
+            "C": 0.3932895362377167
+          }
+        },
+        {
+          "id": "TT140",
+          "label": "U",
+          "split": "unresolved"
+        }
+      ]
+    },
+    {
+      "stage": "First fresh blind Model C test",
+      "cutoff": 0.3932895362377167,
+      "rows": [
+        {
+          "id": "TT141",
+          "human_label": "N",
+          "score": 0.2767309546470642,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT142",
+          "human_label": "N",
+          "score": 0.22571957111358643,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT143",
+          "human_label": "N",
+          "score": 0.35778090357780457,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT144",
+          "human_label": "N",
+          "score": 0.1921536773443222,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT145",
+          "human_label": "N",
+          "score": 0.2816050052642822,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT146",
+          "human_label": "N",
+          "score": 0.44065284729003906,
+          "alert": true,
+          "component": "challenge"
+        },
+        {
+          "id": "TT147",
+          "human_label": "N",
+          "score": 0.21097442507743835,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT148",
+          "human_label": "N",
+          "score": 0.23517295718193054,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT149",
+          "human_label": "N",
+          "score": 0.22769366204738617,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT150",
+          "human_label": "N",
+          "score": 0.5101248025894165,
+          "alert": true,
+          "component": "challenge"
+        },
+        {
+          "id": "TT151",
+          "human_label": "N",
+          "score": 0.21773739159107208,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT152",
+          "human_label": "N",
+          "score": 0.2902847230434418,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT153",
+          "human_label": "N",
+          "score": 0.4514181613922119,
+          "alert": true,
+          "component": "challenge"
+        },
+        {
+          "id": "TT154",
+          "human_label": "N",
+          "score": 0.21687717735767365,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT155",
+          "human_label": "N",
+          "score": 0.2206830382347107,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT156",
+          "human_label": "N",
+          "score": 0.3409331440925598,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT157",
+          "human_label": "N",
+          "score": 0.21855680644512177,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT158",
+          "human_label": "N",
+          "score": 0.3267410397529602,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT159",
+          "human_label": "N",
+          "score": 0.2972596287727356,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT160",
+          "human_label": "N",
+          "score": 0.24213650822639465,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT161",
+          "human_label": "N",
+          "score": 0.29176363348960876,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT162",
+          "human_label": "N",
+          "score": 0.31534355878829956,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT163",
+          "human_label": "N",
+          "score": 0.19110184907913208,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT164",
+          "human_label": "N",
+          "score": 0.24153248965740204,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT165",
+          "human_label": "N",
+          "score": 0.17354851961135864,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT166",
+          "human_label": "N",
+          "score": 0.40223556756973267,
+          "alert": true,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT167",
+          "human_label": "N",
+          "score": 0.20325827598571777,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT168",
+          "human_label": "N",
+          "score": 0.37609392404556274,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT169",
+          "human_label": "N",
+          "score": 0.21711181104183197,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT170",
+          "human_label": "N",
+          "score": 0.26074492931365967,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT171",
+          "human_label": "N",
+          "score": 0.268219918012619,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT172",
+          "human_label": "U",
+          "score": 0.2618282437324524,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT173",
+          "human_label": "N",
+          "score": 0.21066761016845703,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT174",
+          "human_label": "N",
+          "score": 0.23575948178768158,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT175",
+          "human_label": "N",
+          "score": 0.21680128574371338,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT176",
+          "human_label": "V",
+          "score": 0.4049978256225586,
+          "alert": true,
+          "component": "challenge"
+        },
+        {
+          "id": "TT177",
+          "human_label": "N",
+          "score": 0.5542100071907043,
+          "alert": true,
+          "component": "challenge"
+        },
+        {
+          "id": "TT178",
+          "human_label": "N",
+          "score": 0.32458236813545227,
+          "alert": false,
+          "component": "challenge"
+        },
+        {
+          "id": "TT179",
+          "human_label": "N",
+          "score": 0.20682410895824432,
+          "alert": false,
+          "component": "ordinary"
+        },
+        {
+          "id": "TT180",
+          "human_label": "N",
+          "score": 0.25335678458213806,
+          "alert": false,
+          "component": "ordinary"
+        }
+      ]
+    },
+    {
+      "stage": "Fresh paired queue comparison",
+      "cutoff": 0.3932895362377167,
+      "slots_by_component": {
+        "ordinary": 3,
+        "challenge": 2
+      },
+      "rows": [
+        {
+          "id": "TT181",
+          "component": "ordinary",
+          "score": 0.17839688062667847,
+          "cutoff_alert": false,
+          "original_rank": 23,
+          "one_slot_rank": 23,
+          "human_label": "N"
+        },
+        {
+          "id": "TT182",
+          "component": "ordinary",
+          "score": 0.19231872260570526,
+          "cutoff_alert": false,
+          "original_rank": 21,
+          "one_slot_rank": 21,
+          "human_label": "N"
+        },
+        {
+          "id": "TT183",
+          "component": "challenge",
+          "score": 0.2814486622810364,
+          "cutoff_alert": false,
+          "original_rank": 5,
+          "one_slot_rank": 5,
+          "human_label": "N"
+        },
+        {
+          "id": "TT184",
+          "component": "ordinary",
+          "score": 0.5010132193565369,
+          "cutoff_alert": true,
+          "original_rank": 1,
+          "one_slot_rank": 1,
+          "human_label": "N"
+        },
+        {
+          "id": "TT185",
+          "component": "ordinary",
+          "score": 0.2009958028793335,
+          "cutoff_alert": false,
+          "original_rank": 18,
+          "one_slot_rank": 18,
+          "human_label": "N"
+        },
+        {
+          "id": "TT186",
+          "component": "ordinary",
+          "score": 0.22776809334754944,
+          "cutoff_alert": false,
+          "original_rank": 13,
+          "one_slot_rank": 13,
+          "human_label": "N"
+        },
+        {
+          "id": "TT187",
+          "component": "ordinary",
+          "score": 0.24132567644119263,
+          "cutoff_alert": false,
+          "original_rank": 9,
+          "one_slot_rank": 9,
+          "human_label": "N"
+        },
+        {
+          "id": "TT188",
+          "component": "challenge",
+          "score": 0.23893733322620392,
+          "cutoff_alert": false,
+          "original_rank": 10,
+          "one_slot_rank": 10,
+          "human_label": "N"
+        },
+        {
+          "id": "TT189",
+          "component": "ordinary",
+          "score": 0.1757226139307022,
+          "cutoff_alert": false,
+          "original_rank": 24,
+          "one_slot_rank": 24,
+          "human_label": "N"
+        },
+        {
+          "id": "TT190",
+          "component": "challenge",
+          "score": 0.2038004845380783,
+          "cutoff_alert": false,
+          "original_rank": 16,
+          "one_slot_rank": 16,
+          "human_label": "N"
+        },
+        {
+          "id": "TT191",
+          "component": "challenge",
+          "score": 0.21994063258171082,
+          "cutoff_alert": false,
+          "original_rank": 12,
+          "one_slot_rank": 12,
+          "human_label": "N"
+        },
+        {
+          "id": "TT192",
+          "component": "challenge",
+          "score": 0.2888607680797577,
+          "cutoff_alert": false,
+          "original_rank": 3,
+          "one_slot_rank": 3,
+          "human_label": "N"
+        },
+        {
+          "id": "TT193",
+          "component": "challenge",
+          "score": 0.20979730784893036,
+          "cutoff_alert": false,
+          "original_rank": 14,
+          "one_slot_rank": 14,
+          "human_label": "N"
+        },
+        {
+          "id": "TT194",
+          "component": "challenge",
+          "score": 0.2303544282913208,
+          "cutoff_alert": false,
+          "original_rank": 11,
+          "one_slot_rank": 11,
+          "human_label": "N"
+        },
+        {
+          "id": "TT195",
+          "component": "challenge",
+          "score": 0.20694953203201294,
+          "cutoff_alert": false,
+          "original_rank": 15,
+          "one_slot_rank": 15,
+          "human_label": "N"
+        },
+        {
+          "id": "TT196",
+          "component": "challenge",
+          "score": 0.4053818881511688,
+          "cutoff_alert": true,
+          "original_rank": 1,
+          "one_slot_rank": 1,
+          "human_label": "N"
+        },
+        {
+          "id": "TT197",
+          "component": "ordinary",
+          "score": 0.2234880030155182,
+          "cutoff_alert": false,
+          "original_rank": 14,
+          "one_slot_rank": 14,
+          "human_label": "N"
+        },
+        {
+          "id": "TT198",
+          "component": "challenge",
+          "score": 0.256015419960022,
+          "cutoff_alert": false,
+          "original_rank": 6,
+          "one_slot_rank": 6,
+          "human_label": "N"
+        },
+        {
+          "id": "TT199",
+          "component": "ordinary",
+          "score": 0.21283863484859467,
+          "cutoff_alert": false,
+          "original_rank": 15,
+          "one_slot_rank": 15,
+          "human_label": "N"
+        },
+        {
+          "id": "TT200",
+          "component": "challenge",
+          "score": 0.2461147904396057,
+          "cutoff_alert": false,
+          "original_rank": 8,
+          "one_slot_rank": 8,
+          "human_label": "N"
+        },
+        {
+          "id": "TT201",
+          "component": "ordinary",
+          "score": 0.24029982089996338,
+          "cutoff_alert": false,
+          "original_rank": 10,
+          "one_slot_rank": 10,
+          "human_label": "N"
+        },
+        {
+          "id": "TT202",
+          "component": "challenge",
+          "score": 0.25115516781806946,
+          "cutoff_alert": false,
+          "original_rank": 7,
+          "one_slot_rank": 7,
+          "human_label": "N"
+        },
+        {
+          "id": "TT203",
+          "component": "ordinary",
+          "score": 0.22967395186424255,
+          "cutoff_alert": false,
+          "original_rank": 12,
+          "one_slot_rank": 12,
+          "human_label": "N"
+        },
+        {
+          "id": "TT204",
+          "component": "ordinary",
+          "score": 0.26585090160369873,
+          "cutoff_alert": false,
+          "original_rank": 5,
+          "one_slot_rank": 5,
+          "human_label": "N"
+        },
+        {
+          "id": "TT205",
+          "component": "ordinary",
+          "score": 0.25942540168762207,
+          "cutoff_alert": false,
+          "original_rank": 6,
+          "one_slot_rank": 6,
+          "human_label": "N"
+        },
+        {
+          "id": "TT206",
+          "component": "ordinary",
+          "score": 0.2047678828239441,
+          "cutoff_alert": false,
+          "original_rank": 17,
+          "one_slot_rank": 17,
+          "human_label": "N"
+        },
+        {
+          "id": "TT207",
+          "component": "ordinary",
+          "score": 0.19907015562057495,
+          "cutoff_alert": false,
+          "original_rank": 19,
+          "one_slot_rank": 19,
+          "human_label": "N"
+        },
+        {
+          "id": "TT208",
+          "component": "challenge",
+          "score": 0.28366008400917053,
+          "cutoff_alert": false,
+          "original_rank": 4,
+          "one_slot_rank": 4,
+          "human_label": "N"
+        },
+        {
+          "id": "TT209",
+          "component": "challenge",
+          "score": 0.3180946707725525,
+          "cutoff_alert": false,
+          "original_rank": 2,
+          "one_slot_rank": 2,
+          "human_label": "N"
+        },
+        {
+          "id": "TT210",
+          "component": "ordinary",
+          "score": 0.1881207376718521,
+          "cutoff_alert": false,
+          "original_rank": 22,
+          "one_slot_rank": 22,
+          "human_label": "N"
+        },
+        {
+          "id": "TT211",
+          "component": "challenge",
+          "score": 0.2420669049024582,
+          "cutoff_alert": false,
+          "original_rank": 9,
+          "one_slot_rank": 9,
+          "human_label": "N"
+        },
+        {
+          "id": "TT212",
+          "component": "ordinary",
+          "score": 0.24837249517440796,
+          "cutoff_alert": false,
+          "original_rank": 8,
+          "one_slot_rank": 8,
+          "human_label": "N"
+        },
+        {
+          "id": "TT213",
+          "component": "challenge",
+          "score": 0.218847393989563,
+          "cutoff_alert": false,
+          "original_rank": 13,
+          "one_slot_rank": 13,
+          "human_label": "N"
+        },
+        {
+          "id": "TT214",
+          "component": "ordinary",
+          "score": 0.44360941648483276,
+          "cutoff_alert": true,
+          "original_rank": 2,
+          "one_slot_rank": 2,
+          "human_label": "N"
+        },
+        {
+          "id": "TT215",
+          "component": "ordinary",
+          "score": 0.25006240606307983,
+          "cutoff_alert": false,
+          "original_rank": 7,
+          "one_slot_rank": 7,
+          "human_label": "N"
+        },
+        {
+          "id": "TT216",
+          "component": "ordinary",
+          "score": 0.3701670467853546,
+          "cutoff_alert": false,
+          "original_rank": 4,
+          "one_slot_rank": 4,
+          "human_label": "N"
+        },
+        {
+          "id": "TT217",
+          "component": "ordinary",
+          "score": 0.23440571129322052,
+          "cutoff_alert": false,
+          "original_rank": 11,
+          "one_slot_rank": 11,
+          "human_label": "N"
+        },
+        {
+          "id": "TT218",
+          "component": "ordinary",
+          "score": 0.1937723606824875,
+          "cutoff_alert": false,
+          "original_rank": 20,
+          "one_slot_rank": 20,
+          "human_label": "N"
+        },
+        {
+          "id": "TT219",
+          "component": "ordinary",
+          "score": 0.20649318397045135,
+          "cutoff_alert": false,
+          "original_rank": 16,
+          "one_slot_rank": 16,
+          "human_label": "N"
+        },
+        {
+          "id": "TT220",
+          "component": "ordinary",
+          "score": 0.38308393955230713,
+          "cutoff_alert": false,
+          "original_rank": 3,
+          "one_slot_rank": 3,
+          "human_label": "N"
+        }
+      ]
+    },
+    {
+      "stage": "Fresh paired queue comparison with post-reveal label revision",
+      "cutoff": 0.3932895362377167,
+      "slots_by_component": {
+        "mixed": 3,
+        "challenge": 2
+      },
+      "rows": [
+        {
+          "id": "TT221",
+          "component": "challenge",
+          "score": 0.30977150797843933,
+          "cutoff_alert": false,
+          "original_rank": 13,
+          "one_slot_rank": 13,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT222",
+          "component": "challenge",
+          "score": 0.5585137009620667,
+          "cutoff_alert": true,
+          "original_rank": 1,
+          "one_slot_rank": 1,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT223",
+          "component": "mixed",
+          "score": 0.34844306111335754,
+          "cutoff_alert": false,
+          "original_rank": 13,
+          "one_slot_rank": 13,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT224",
+          "component": "mixed",
+          "score": 0.37573477625846863,
+          "cutoff_alert": false,
+          "original_rank": 10,
+          "one_slot_rank": 10,
+          "human_label": "N",
+          "original_blind_label": "V"
+        },
+        {
+          "id": "TT225",
+          "component": "challenge",
+          "score": 0.34590110182762146,
+          "cutoff_alert": false,
+          "original_rank": 10,
+          "one_slot_rank": 10,
+          "human_label": "N",
+          "original_blind_label": "V"
+        },
+        {
+          "id": "TT226",
+          "component": "challenge",
+          "score": 0.36031562089920044,
+          "cutoff_alert": false,
+          "original_rank": 9,
+          "one_slot_rank": 9,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT227",
+          "component": "mixed",
+          "score": 0.32024410367012024,
+          "cutoff_alert": false,
+          "original_rank": 14,
+          "one_slot_rank": 14,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT228",
+          "component": "mixed",
+          "score": 0.28918030858039856,
+          "cutoff_alert": false,
+          "original_rank": 17,
+          "one_slot_rank": 17,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT229",
+          "component": "mixed",
+          "score": 0.30774202942848206,
+          "cutoff_alert": false,
+          "original_rank": 16,
+          "one_slot_rank": 16,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT230",
+          "component": "mixed",
+          "score": 0.2628267705440521,
+          "cutoff_alert": false,
+          "original_rank": 21,
+          "one_slot_rank": 21,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT231",
+          "component": "challenge",
+          "score": 0.463387668132782,
+          "cutoff_alert": true,
+          "original_rank": 4,
+          "one_slot_rank": 4,
+          "human_label": "V",
+          "original_blind_label": "V"
+        },
+        {
+          "id": "TT232",
+          "component": "mixed",
+          "score": 0.4861530661582947,
+          "cutoff_alert": true,
+          "original_rank": 3,
+          "one_slot_rank": 3,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT233",
+          "component": "mixed",
+          "score": 0.2353137880563736,
+          "cutoff_alert": false,
+          "original_rank": 24,
+          "one_slot_rank": 24,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT234",
+          "component": "mixed",
+          "score": 0.4280625879764557,
+          "cutoff_alert": true,
+          "original_rank": 7,
+          "one_slot_rank": 7,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT235",
+          "component": "challenge",
+          "score": 0.39673343300819397,
+          "cutoff_alert": true,
+          "original_rank": 7,
+          "one_slot_rank": 7,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT236",
+          "component": "challenge",
+          "score": 0.28581348061561584,
+          "cutoff_alert": false,
+          "original_rank": 16,
+          "one_slot_rank": 16,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT237",
+          "component": "challenge",
+          "score": 0.3322196900844574,
+          "cutoff_alert": false,
+          "original_rank": 11,
+          "one_slot_rank": 11,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT238",
+          "component": "challenge",
+          "score": 0.3659534752368927,
+          "cutoff_alert": false,
+          "original_rank": 8,
+          "one_slot_rank": 8,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT239",
+          "component": "mixed",
+          "score": 0.45782721042633057,
+          "cutoff_alert": true,
+          "original_rank": 5,
+          "one_slot_rank": 5,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT240",
+          "component": "challenge",
+          "score": 0.30077534914016724,
+          "cutoff_alert": false,
+          "original_rank": 14,
+          "one_slot_rank": 14,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT241",
+          "component": "mixed",
+          "score": 0.24847202003002167,
+          "cutoff_alert": false,
+          "original_rank": 22,
+          "one_slot_rank": 22,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT242",
+          "component": "mixed",
+          "score": 0.5662686228752136,
+          "cutoff_alert": true,
+          "original_rank": 1,
+          "one_slot_rank": 1,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT243",
+          "component": "challenge",
+          "score": 0.4776233732700348,
+          "cutoff_alert": true,
+          "original_rank": 2,
+          "one_slot_rank": 2,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT244",
+          "component": "challenge",
+          "score": 0.4633817970752716,
+          "cutoff_alert": true,
+          "original_rank": 5,
+          "one_slot_rank": 5,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT245",
+          "component": "mixed",
+          "score": 0.28603002429008484,
+          "cutoff_alert": false,
+          "original_rank": 19,
+          "one_slot_rank": 19,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT246",
+          "component": "mixed",
+          "score": 0.3663649260997772,
+          "cutoff_alert": false,
+          "original_rank": 12,
+          "one_slot_rank": 12,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT247",
+          "component": "mixed",
+          "score": 0.5088784098625183,
+          "cutoff_alert": true,
+          "original_rank": 2,
+          "one_slot_rank": 2,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT248",
+          "component": "mixed",
+          "score": 0.23648154735565186,
+          "cutoff_alert": false,
+          "original_rank": 23,
+          "one_slot_rank": 23,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT249",
+          "component": "mixed",
+          "score": 0.2653266489505768,
+          "cutoff_alert": false,
+          "original_rank": 20,
+          "one_slot_rank": 20,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT250",
+          "component": "mixed",
+          "score": 0.47077903151512146,
+          "cutoff_alert": true,
+          "original_rank": 4,
+          "one_slot_rank": 4,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT251",
+          "component": "mixed",
+          "score": 0.43992501497268677,
+          "cutoff_alert": true,
+          "original_rank": 6,
+          "one_slot_rank": 6,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT252",
+          "component": "mixed",
+          "score": 0.2865276634693146,
+          "cutoff_alert": false,
+          "original_rank": 18,
+          "one_slot_rank": 18,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT253",
+          "component": "challenge",
+          "score": 0.3201289474964142,
+          "cutoff_alert": false,
+          "original_rank": 12,
+          "one_slot_rank": 12,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT254",
+          "component": "challenge",
+          "score": 0.4763903319835663,
+          "cutoff_alert": true,
+          "original_rank": 3,
+          "one_slot_rank": 3,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT255",
+          "component": "challenge",
+          "score": 0.41866615414619446,
+          "cutoff_alert": true,
+          "original_rank": 6,
+          "one_slot_rank": 6,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT256",
+          "component": "mixed",
+          "score": 0.37461936473846436,
+          "cutoff_alert": false,
+          "original_rank": 11,
+          "one_slot_rank": 11,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT257",
+          "component": "challenge",
+          "score": 0.29353067278862,
+          "cutoff_alert": false,
+          "original_rank": 15,
+          "one_slot_rank": 15,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT258",
+          "component": "mixed",
+          "score": 0.3896457850933075,
+          "cutoff_alert": false,
+          "original_rank": 9,
+          "one_slot_rank": 9,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT259",
+          "component": "mixed",
+          "score": 0.3199465274810791,
+          "cutoff_alert": false,
+          "original_rank": 15,
+          "one_slot_rank": 15,
+          "human_label": "N",
+          "original_blind_label": "N"
+        },
+        {
+          "id": "TT260",
+          "component": "mixed",
+          "score": 0.4268072545528412,
+          "cutoff_alert": true,
+          "original_rank": 8,
+          "one_slot_rank": 8,
+          "human_label": "N",
+          "original_blind_label": "N"
+        }
+      ]
+    }
+  ]
+}

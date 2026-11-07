@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+/data/
+python-packages/
+.venv/
+node_modules/
+.vercel/
+.env*
+.openai/
+.venv-context/
+/context-base/
+/context-cache/
+/context-runs/
+/labelled-development.json

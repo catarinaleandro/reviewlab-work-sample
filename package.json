@@ -1,0 +1,18 @@
+{
+  "name": "reviewlab-content-moderation",
+  "version": "1.4.0",
+  "private": true,
+  "description": "Human review prioritisation with frozen benchmarks and transparent error analysis",
+  "scripts": {
+    "build": "node ml/verify.cjs",
+    "test": "node ml/verify.cjs",
+    "start": "python3 -m http.server 8765 --bind 127.0.0.1 --directory dist",
+    "case-study": "node render-case.mjs"
+  },
+  "engines": {
+    "node": "24.x"
+  },
+  "devDependencies": {
+    "marked": "17.0.5"
+  }
+}
