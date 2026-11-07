@@ -1,0 +1,6 @@
+[
+  {"name":"Direct threat language","weight":4,"phrases":["kill you","kill yourself","shoot you","you should die","hope you die","you deserve to die"]},
+  {"name":"Insult language","weight":2,"phrases":["idiot","idiots","moron","morons","stupid","dumb","loser","losers","scumbag","scum","imbecile","pathetic","retard","retarded"]},
+  {"name":"Profanity","weight":2,"phrases":["fuck","fucking","fucker","fuckers","shit","bullshit","asshole","assholes","bitch","bastard","bastards","cunt"]},
+  {"name":"Hostile phrasing","weight":1,"phrases":["shut up","hate you","go to hell","screw you","get lost"]}
+]

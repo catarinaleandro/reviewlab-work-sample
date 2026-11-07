@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "seed": 42,
+  "source": "google/civil_comments",
+  "label_target": "toxicity >= 0.5",
+  "sample_plan": {"train": 60000, "validation": 8000, "test": 10000},
+  "split_policy": "Retain official splits. Uniform random sampling within each split, with no balancing. Remove empty texts and punctuation/case/whitespace-normalized duplicate texts within and across sampled splits, in train/validation/test order. Thread/video identifiers are not present in this mirror; group leakage and fuzzy near-duplicates are unresolved limitations.",
+  "features": "Comment text only. Fit vocabulary and IDF on training only. No annotation fields as input.",
+  "candidates": ["random", "rules", "word", "word_char"],
+  "word_features": {"ngram_range": [1, 2], "max_features": 30000, "min_df": 2, "sublinear_tf": true},
+  "char_features": {"analyzer": "char_wb", "ngram_range": [3, 5], "max_features": 30000, "min_df": 3, "sublinear_tf": true},
+  "logistic_regression": {"C": 2, "solver": "liblinear", "max_iter": 1000, "class_weight": null},
+  "selection": "Select between word and word_char on validation recall at 10% review capacity; break a tie by validation average precision.",
+  "capacities": [0.05, 0.10, 0.20],
+  "threshold": "Separately freeze the selected model's validation score at rank ceil(0.10 * validation size). Report test outcomes without retuning it.",
+  "tie_breaker": "Ascending SHA-256 of split and original source-row index; independent of labels.",
+  "primary_metric": "Recall at 10% capacity",
+  "target": "At least 10% relative increase in toxic comments captured versus rules at 10% capacity, paired bootstrap recall difference lower bound above zero. Threat and contextual false-positive checks remain necessary before a pilot.",
+  "uncertainty": "500 paired row bootstrap resamples, reranking each strategy within each resample, 95% percentile interval. Does not account for unobserved thread clusters.",
+  "excluded_claims": ["TikTok performance", "policy violation detection", "reduced real-world harm", "production readiness", "fairness certification"]
+}

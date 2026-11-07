@@ -1,0 +1,12 @@
+{
+  "TT097":{"summary":"Enthusiastic praise for a pair of earbuds.","context":"Earbud launch and workout features.","interpretation":"Profanity expresses enthusiasm here. It does not target anyone with abuse."},
+  "TT002":{"summary":"An emphatic one-word reaction to a mop-cleaning demonstration.","context":"Scrubbing a dirty mop with cleaning gel.","interpretation":"The reaction has no established personal target. A word associated with insults can also express surprise."},
+  "TT036":{"summary":"Asks whether a screw could function as a drill bit.","context":"Woodworking and screw design.","interpretation":"The potentially ambiguous vocabulary describes physical tools. The human review found no abusive act."},
+  "TT066":{"summary":"Asks whether freezing stored grains eliminates insect eggs.","context":"Long-term dry-food storage.","interpretation":"The reference to killing concerns food pests, not a threat toward a person."},
+  "TT063":{"summary":"Expresses frustration about a crowded freezer and switching to drying food.","context":"Chopping and freezing onions.","interpretation":"Negative language describes a storage problem. It does not establish targeted harassment."},
+  "TT004":{"summary":"Praises a dirty-mop cleaning demonstration.","context":"Scrubbing a dirty mop with cleaning gel.","interpretation":"The language describes a literal cleaning task. This is a top-10 selection but falls below the frozen cutoff."},
+  "TT074":{"summary":"Requests release of files about a political public figure.","context":"A dog-bed post with political references.","interpretation":"The human reviewer found no prohibited act in this political request. A political name alone is not a violation."},
+  "TT029":{"summary":"Admires a miniature maker’s patience and dedication.","context":"Building a miniature house from craft materials.","interpretation":"The comment expresses admiration. Its low score still enters a queue that must fill ten slots."},
+  "TT021":{"summary":"Jokes that a home coffee setup resembles a café.","context":"A home espresso machine and grinder.","interpretation":"The joke concerns a coffee setup. The human review found no harmful targeting."},
+  "TT048":{"summary":"Plans to try a hair routine and asks for good luck.","context":"Heatless curls using socks.","interpretation":"An ordinary intention to try the routine. Queue membership alone does not mean the model passed its flag cutoff."}
+}

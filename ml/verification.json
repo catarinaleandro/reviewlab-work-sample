@@ -1,0 +1,10 @@
+{
+  "benchmark_rows": 9916,
+  "learned_prediction_checks": 19832,
+  "rules_checks": 9916,
+  "max_absolute_prediction_error": 2.55351295663786e-15,
+  "metric_comparisons": 12,
+  "csv_checks": "passed",
+  "unlabelled_metrics": "hidden",
+  "status": "passed"
+}
