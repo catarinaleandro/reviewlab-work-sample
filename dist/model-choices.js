@@ -64,7 +64,10 @@ function renderModels() {
       ${current.id === 'A' ? '<p>The deployed cutoff was selected on the original Civil Comments validation set.</p>' : `<p>${esc(plan.training.framework)} · one epoch · seed 42 · batch size eight · ten pair-generation iterations. Both models started from the same BGE-small checkpoint.</p><p>Checkpoint revision <code>${esc(plan.base_model.revision)}</code>. The 512-token input preserves the comment and shortens context first.</p>`}</div></details>
     </section>
     <section class="panel panel-pad"><h2>What happened on fresh comments</h2>
-      <p class="body-copy">In the first blind batch of 40, C raised six alerts. Five were false positives. It caught the sole labelled violation, which ranked fifth in a group of 16 with two review slots. One comment needed more context.</p>
+      <p class="body-copy">Across 40 fresh comments, Model C flagged six. Catarina labelled one of those six a violation and the other five harmless. A separate comment needed more context.</p>
+      <h3>What would a moderator with time for two comments see?</h3>
+      <p class="body-copy">In one group of 16, Model C used each comment and its caption to set the review order. An affectionate joke about a corgi came first. A reassuring message about the creator’s appearance came second. Both were harmless.</p>
+      <p class="body-copy">Fifth in line, a writer said their mother would hit the person they were addressing. Catarina labelled it a violation because it described harm directed at someone, though the writer’s tone was unclear. <strong>Model C flagged it, but four comments scored higher. A moderator reading only the first two would stop before seeing it.</strong></p>
       <p class="body-copy">A proposed rule gave one existing alert priority for possible physical harm. It improved the original replay. Across two subsequent 40-comment batches, the original and revised queues selected exactly the same cases at the fixed budgets. <a href="work-sample.html#decisions">See what it would take to advance each change</a> and <a href="work-sample.html#limitations">read the limitations</a>.</p>
       <div class="resource-links">${plan.sources.map((source) => `<a href="${esc(source.url)}" target="_blank" rel="noopener">${esc(source.title)} ↗</a>`).join('')}</div>
     </section>

@@ -7,16 +7,44 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:1.2rem}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.65 'DM Sans',system-ui,sans-serif}
 a{color:var(--green);text-underline-offset:.2em}a:focus-visible,summary:focus-visible{outline:3px solid #af622e;outline-offset:3px}
 header{border-bottom:1px solid var(--line);background:#fff}.top,main,footer{max-width:1016px;margin:auto;padding-inline:clamp(18px,5vw,54px)}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:65px}.wordmark{font-size:1.2rem;font-weight:760;letter-spacing:-.045em}.top a{font-size:.9rem}
-.intro{padding:clamp(28px,5vw,64px) 0 26px}.byline,figcaption{color:var(--muted);font-size:.91rem}.byline{margin:0 0 12px}h1,h2{font-family:Manrope,system-ui,sans-serif;line-height:1.15;letter-spacing:-.038em}h1{font-size:clamp(2.25rem,5.5vw,4rem);max-width:19ch;margin:0 0 18px}h2{font-size:clamp(1.45rem,3vw,2.05rem);border-top:1px solid var(--line);padding-top:31px;margin:36px 0 12px}p{max-width:78ch;margin:.8rem 0}.lede{max-width:72ch;font-size:1.08rem}.links,nav{display:flex;gap:10px 20px;flex-wrap:wrap}.links{margin:18px 0 0;align-items:center}.button{display:inline-block;background:var(--ink);color:white;padding:8px 14px;border-radius:5px;text-decoration:none}.button:hover{background:var(--green)}nav{font-size:.92rem;margin:18px 0 26px}h3{margin:20px 0 6px;line-height:1.3}figure{margin:0;background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:9px}figure ol{margin:.45rem 0;padding-left:1.8rem}figure li{padding-left:.45rem;margin:.25rem 0}figure .miss{border-top:1px dashed #adbdac;padding-top:.42rem}.miss strong{color:#88472e}
+.intro{padding:clamp(28px,5vw,64px) 0 26px}.byline,figcaption{color:var(--muted);font-size:.91rem}.byline{margin:0 0 12px}h1,h2{font-family:Manrope,system-ui,sans-serif;line-height:1.15;letter-spacing:-.038em}h1{font-size:clamp(2.25rem,5.5vw,4rem);max-width:19ch;margin:0 0 18px}h2{font-size:clamp(1.45rem,3vw,2.05rem);border-top:1px solid var(--line);padding-top:31px;margin:36px 0 12px}p{max-width:78ch;margin:.8rem 0}.queue-example>p:first-child{max-width:72ch;font-size:1.08rem}.queue-example table{margin:18px 0}.queue-example th:first-child,.queue-example td:first-child{width:auto;white-space:nowrap}.links,nav{display:flex;gap:10px 20px;flex-wrap:wrap}.links{margin:18px 0 0;align-items:center}.button{display:inline-block;background:var(--ink);color:white;padding:8px 14px;border-radius:5px;text-decoration:none}.button:hover{background:var(--green)}nav{font-size:.92rem;margin:18px 0 26px}h3{margin:20px 0 6px;line-height:1.3}figure{margin:0;background:#fff;border:1px solid var(--line);padding:16px 20px;border-radius:9px}figure ol{margin:.45rem 0;padding-left:1.8rem}figure li{padding-left:.45rem;margin:.25rem 0}figure .miss{border-top:1px dashed #adbdac;padding-top:.42rem}.miss strong{color:#88472e}
 table{width:100%;border-collapse:collapse;font-size:.94rem;margin:18px 0 22px}th,td{padding:12px 14px;border:1px solid var(--line);vertical-align:top;text-align:left}th{background:var(--tint)}td{background:#fff}td:first-child{width:26%}ol,ul{padding-left:1.35rem}li{margin:.65rem 0}footer{margin-top:36px;padding-block:20px 44px;color:var(--muted);font-size:.9rem}
 @media(max-width:640px){table,tbody,tr,td{display:block}table{border:0}thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}tbody tr{border:1px solid var(--line);background:white;margin:.8rem 0;border-radius:6px;overflow:hidden}td,td:first-child{width:auto;border:0;padding:8px 13px}td:first-child{background:var(--tint);font-weight:650}td::before{content:attr(data-label);display:block;font-size:.76rem;font-weight:650;color:var(--muted)}td:empty{display:none}li{margin:.7rem 0}.intro{padding-bottom:18px}}
 @media print{header,nav,.links,footer{display:none}main{max-width:none;padding:0}h1{font-size:30pt}h2{font-size:17pt;break-after:avoid}figure,tr{break-inside:avoid}body{background:white;font-size:10pt}a{color:inherit}}
 </style></head><body><header><div class="top"><span class="wordmark">ReviewLab</span><a href="/#queue">Open dashboard →</a></div></header>
 <main><div class="intro"><p class="byline">Catarina Leandro · Independent AI product work sample · November 2026</p>
-<h1>Which comments should a moderator review first?</h1><div class="lede"><p>I gave a test queue two review slots. The model that reads a comment alongside its caption and any parent comment (Model C) put an affectionate joke about a corgi first and a reassuring message second. The only comment I labelled a violation came fifth out of 16. I read it as a statement about physical harm directed at another person. With only the text and caption, the speaker’s tone remained uncertain. The model raised an alert, but a reviewer with two slots would never have reached it.</p>
+<h1>Which comments should a moderator review first?</h1><div class="queue-example"><p>Imagine a moderator has 16 TikTok comments waiting and time to read only two. In this test, Model C read each comment and its video caption, then sorted the comments by their review scores. The moderator would read the first two and stop.</p>
+<table>
+<thead>
+<tr>
+<th>Place in line</th>
+<th>Comment (paraphrased)</th>
+<th>My label</th>
+<th>Would the moderator read it?</th>
+</tr>
+</thead>
+<tbody><tr>
+<td data-label="Place in line">1st</td>
+<td data-label="Comment (paraphrased)">Someone joked affectionately about a chubby corgi.</td>
+<td data-label="My label">No violation</td>
+<td data-label="Would the moderator read it?">Yes</td>
+</tr>
+<tr>
+<td data-label="Place in line">2nd</td>
+<td data-label="Comment (paraphrased)">Someone reassured the creator about how they looked.</td>
+<td data-label="My label">No violation</td>
+<td data-label="Would the moderator read it?">Yes</td>
+</tr>
+<tr>
+<td data-label="Place in line">5th</td>
+<td data-label="Comment (paraphrased)">The writer said their mother would hit the person they were addressing.</td>
+<td data-label="My label">Violation</td>
+<td data-label="Would the moderator read it?">No</td>
+</tr>
+</tbody></table>
+<p>The fifth comment was the only one I labelled a violation. I read it as a remark about physical harm aimed at another person, although the caption left the writer’s tone unclear. <strong>Model C flagged it for review, but four comments scored higher. By the time the moderator finished the corgi joke and the reassurance, both review slots were used. The flagged comment would still be waiting.</strong></p>
 </div>
 </div>
-<figure><figcaption>First blind test · 16-comment challenge group · two review slots · paraphrased examples</figcaption><ol><li>Affectionate comment about a corgi</li><li>Reassurance about someone’s appearance</li><li value="5" class="miss"><strong>Labelled violation</strong> · statement about one person striking another</li></ol></figure>
 <h2 id="decisions">Two decisions and what would change them</h2>
 <h3>Should context change which comments get flagged?</h3>
 <p><strong>Decision. Keep the baseline in the demo and test the context model offline.</strong> On ten validation comments, the comment-only challenger (B) flagged four of eight harmless comments. Adding the caption and parent comment (C) reduced that to one. Both caught the two labelled violations.</p>
@@ -74,7 +102,7 @@ table{width:100%;border-collapse:collapse;font-size:.94rem;margin:18px 0 22px}th
 </tr>
 <tr>
 <td data-label="Experiment"><strong>Test a fresh queue.</strong> I labelled 40 new comments before seeing C’s predictions.</td>
-<td data-label="Observation">C raised six alerts. One was the sole labelled violation and five were false alarms. One additional comment needed context. The violation ranked fifth for two review slots in the wording-selected group.</td>
+<td data-label="Observation">C raised six alerts. One was the sole labelled violation and five were false alarms. One additional comment needed context. In the group of 16 selected for their wording, the only labelled violation ranked fifth. A moderator reading the first two would miss it.</td>
 <td data-label="Product decision">Investigate ranking and context errors. One positive gives too little evidence to estimate detection reliably.</td>
 </tr>
 <tr>
