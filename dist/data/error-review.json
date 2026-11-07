@@ -1,0 +1,637 @@
+{
+  "version": "error-review-v1",
+  "rubric_version": "review-rubric-v2",
+  "status": "Qualitative assistant audit; proposed decisions are not independent human ground truth.",
+  "selection_method": "Six purposively selected held-out test errors illustrating distinct failure modes. Not a random or representative error sample.",
+  "review_capacity": 992,
+  "test_size": 9916,
+  "queue_cutoff": 0.16348949295350138,
+  "label_cutoff": 0.5,
+  "benchmark_unchanged": true,
+  "cases": [
+    {
+      "id": "84312aa2b32e74976cc9cba4208429c47d000bff48fe2913a0c8a123a9dab94c",
+      "text": "Definitely - his outfit is sooo passé - it needs major updating. I like the idea of nice black trousers, white shirt and black jacket.",
+      "toxicity": 0,
+      "label": 0,
+      "threat": 0,
+      "insult": 0,
+      "identity_attack": 0,
+      "scores": {
+        "random": 0.9973291517558067,
+        "rules": 0,
+        "word": 0.4000371950114701,
+        "word_char": 0.421592065683793
+      },
+      "rank": 427,
+      "top_positive": [
+        {
+          "term": "black",
+          "branch": "word",
+          "contribution": 1.052213820739712
+        },
+        {
+          "term": "white",
+          "branch": "word",
+          "contribution": 0.4824321334760639
+        },
+        {
+          "term": "black",
+          "branch": "character",
+          "contribution": 0.23700284175981312
+        },
+        {
+          "term": "blac",
+          "branch": "character",
+          "contribution": 0.2357654756670215
+        },
+        {
+          "term": " blac",
+          "branch": "character",
+          "contribution": 0.23321358843883808
+        },
+        {
+          "term": " id",
+          "branch": "character",
+          "contribution": 0.20471903658721627
+        },
+        {
+          "term": "hit",
+          "branch": "character",
+          "contribution": 0.1921570218793888
+        },
+        {
+          "term": "his",
+          "branch": "word",
+          "contribution": 0.16473353157276718
+        }
+      ],
+      "top_negative": [
+        {
+          "term": "and black",
+          "branch": "word",
+          "contribution": -0.22835872272431534
+        },
+        {
+          "term": "shirt",
+          "branch": "word",
+          "contribution": -0.18552672864331435
+        },
+        {
+          "term": "idea of",
+          "branch": "word",
+          "contribution": -0.1764535059138632
+        },
+        {
+          "term": "like the",
+          "branch": "word",
+          "contribution": -0.17057748538479706
+        },
+        {
+          "term": "it needs",
+          "branch": "word",
+          "contribution": -0.15107716887377903
+        }
+      ],
+      "word_term_presence": {
+        "intellect": true,
+        "deficient": true,
+        "intellect deficient": false,
+        "worms": false,
+        "grave": true,
+        "deserve death": false
+      },
+      "title": "Literal colours mistaken for a toxicity signal",
+      "error_type": "false_positive",
+      "failure_mode": "Word meaning / lexical association",
+      "excerpt": "I like the idea of nice black trousers, white shirt and black jacket.",
+      "reason": "Neutral description; no person or group is attacked.",
+      "observed": "The words black and white contribute +1.05 and +0.48 to the linear score. Shirt pushes down, but does not offset those signals.",
+      "interpretation": "The model has learned broad lexical associations and does not reliably distinguish clothing colours from identity-related uses. This example does not reveal the author’s identity.",
+      "rubric_change": "Never flag a neutral colour or identity mention by itself. Identify the target and the actual abusive proposition.",
+      "model_score": 0.421592065683793,
+      "reference_label": 0,
+      "recommended_decision": "No violation"
+    },
+    {
+      "id": "d36de6a4ba0cf0dae52373cc78b0579b73e2dc4e6732374f0b31a2429b850f56",
+      "text": "Indeed, it's used, but paying a fair share doesn't mean someone is stupid. The TTC is $6 to use, why should the roads be cheaper?",
+      "toxicity": 0.4000000059604645,
+      "label": 0,
+      "threat": 0,
+      "insult": 0.5,
+      "identity_attack": 0,
+      "scores": {
+        "random": 0.06215064545888893,
+        "rules": 2,
+        "word": 0.562864175601252,
+        "word_char": 0.8545535044623913
+      },
+      "rank": 146,
+      "top_positive": [
+        {
+          "term": "stupid",
+          "branch": "word",
+          "contribution": 1.5088142131636975
+        },
+        {
+          "term": "stupi",
+          "branch": "character",
+          "contribution": 0.4415875101437822
+        },
+        {
+          "term": "tupi",
+          "branch": "character",
+          "contribution": 0.4415875101437822
+        },
+        {
+          "term": "upid",
+          "branch": "character",
+          "contribution": 0.4355129604746247
+        },
+        {
+          "term": "stup",
+          "branch": "character",
+          "contribution": 0.43514294434496537
+        },
+        {
+          "term": "tupid",
+          "branch": "character",
+          "contribution": 0.43363516242308103
+        },
+        {
+          "term": " stup",
+          "branch": "character",
+          "contribution": 0.4256127282541178
+        },
+        {
+          "term": "tup",
+          "branch": "character",
+          "contribution": 0.4213470480165651
+        }
+      ],
+      "top_negative": [
+        {
+          "term": "why should",
+          "branch": "word",
+          "contribution": -0.11879189008989015
+        },
+        {
+          "term": "use",
+          "branch": "word",
+          "contribution": -0.111795803187856
+        },
+        {
+          "term": "paying",
+          "branch": "word",
+          "contribution": -0.10955193831043057
+        },
+        {
+          "term": "cheaper",
+          "branch": "word",
+          "contribution": -0.10495054473249
+        },
+        {
+          "term": "why",
+          "branch": "word",
+          "contribution": -0.08808217363186908
+        }
+      ],
+      "word_term_presence": {
+        "intellect": true,
+        "deficient": true,
+        "intellect deficient": false,
+        "worms": false,
+        "grave": true,
+        "deserve death": false
+      },
+      "title": "Negation does not cancel the insult feature",
+      "error_type": "false_positive",
+      "failure_mode": "Negation / stance",
+      "excerpt": "paying a fair share doesn't mean someone is stupid.",
+      "reason": "The sentence rejects the insult rather than applying it.",
+      "observed": "Stupid contributes +1.51 to the word-branch score; overlapping character patterns also push upward.",
+      "interpretation": "A bag of short word and character patterns has limited ability to represent who is endorsing or rejecting an insult across a sentence.",
+      "rubric_change": "Read negation and speaker stance. Do not treat a rejected insult as an endorsed personal attack.",
+      "model_score": 0.8545535044623913,
+      "reference_label": 0,
+      "recommended_decision": "No violation"
+    },
+    {
+      "id": "888c2997508054b5849484653c67e42f3eba35780c59b8832f3c03b5aef8250c",
+      "text": "\"Aga Kahn a muslim imam connected to isis\"\n\nAny proof of this ridiculous assertion?",
+      "toxicity": 0,
+      "label": 0,
+      "threat": 0,
+      "insult": 0,
+      "identity_attack": 0,
+      "scores": {
+        "random": 0.32517351386041327,
+        "rules": 0,
+        "word": 0.8021998278706697,
+        "word_char": 0.9410855757815368
+      },
+      "rank": 95,
+      "top_positive": [
+        {
+          "term": "ridiculous",
+          "branch": "word",
+          "contribution": 0.5270692456050075
+        },
+        {
+          "term": "aga",
+          "branch": "word",
+          "contribution": 0.4293554506411775
+        },
+        {
+          "term": "idi",
+          "branch": "character",
+          "contribution": 0.3958514591217712
+        },
+        {
+          "term": "proof",
+          "branch": "word",
+          "contribution": 0.24878942672910181
+        },
+        {
+          "term": "muslim",
+          "branch": "word",
+          "contribution": 0.21780145232749015
+        },
+        {
+          "term": " ass",
+          "branch": "character",
+          "contribution": 0.17571472182052097
+        },
+        {
+          "term": "dicul",
+          "branch": "character",
+          "contribution": 0.17396654870418965
+        },
+        {
+          "term": "dicu",
+          "branch": "character",
+          "contribution": 0.17072572298349792
+        }
+      ],
+      "top_negative": [
+        {
+          "term": "assertion",
+          "branch": "word",
+          "contribution": -0.14350186538101245
+        },
+        {
+          "term": "proof of",
+          "branch": "word",
+          "contribution": -0.10342811998979673
+        },
+        {
+          "term": "n? ",
+          "branch": "character",
+          "contribution": -0.09157532073900991
+        },
+        {
+          "term": " ka",
+          "branch": "character",
+          "contribution": -0.07944701250238617
+        },
+        {
+          "term": "ion?",
+          "branch": "character",
+          "contribution": -0.0564862148221913
+        }
+      ],
+      "word_term_presence": {
+        "intellect": true,
+        "deficient": true,
+        "intellect deficient": false,
+        "worms": false,
+        "grave": true,
+        "deserve death": false
+      },
+      "title": "A quoted allegation is being challenged",
+      "error_type": "false_positive",
+      "failure_mode": "Quotation / counterspeech",
+      "excerpt": "Any proof of this ridiculous assertion?",
+      "reason": "In the visible text, the author asks for proof of the quoted allegation; the criticism targets the assertion.",
+      "observed": "Ridiculous, aga, proof, and muslim are positive word influences. A character fragment idi also pushes upward.",
+      "interpretation": "The scorer cannot reliably attribute the quoted claim to another speaker or recognise the author’s challenge. This is a plausible explanation supported by the feature contributions, not a proof of intent.",
+      "rubric_change": "Quotation is not endorsement. Assess the author’s stance; quotation marks alone do not exempt an endorsed attack.",
+      "model_score": 0.9410855757815368,
+      "reference_label": 0,
+      "recommended_decision": "No violation"
+    },
+    {
+      "id": "b26417677a0048a7d3c0f9bcae2a9e0a9a79052c480005def8c6fa17985432da",
+      "text": "Keith Olbermann: What an intellect deficient person you are. I wonder why any organization pays you to spout meaningless nonsense. You are one common sense deprived person.",
+      "toxicity": 0.5540540814399719,
+      "label": 1,
+      "threat": 0,
+      "insult": 0.5270270109176636,
+      "identity_attack": 0.027027027681469917,
+      "scores": {
+        "random": 0.8657041240852337,
+        "rules": 0,
+        "word": 0.22787890965147373,
+        "word_char": 0.1535805245000119
+      },
+      "rank": 1041,
+      "top_positive": [
+        {
+          "term": "nonsense",
+          "branch": "word",
+          "contribution": 0.37969537515393975
+        },
+        {
+          "term": "you",
+          "branch": "word",
+          "contribution": 0.2961967008564466
+        },
+        {
+          "term": "you are",
+          "branch": "word",
+          "contribution": 0.25581891114481276
+        },
+        {
+          "term": "what an",
+          "branch": "word",
+          "contribution": 0.19904669420731277
+        },
+        {
+          "term": "spout",
+          "branch": "word",
+          "contribution": 0.16641483721017813
+        },
+        {
+          "term": "are",
+          "branch": "word",
+          "contribution": 0.16560328154453727
+        },
+        {
+          "term": "wonder",
+          "branch": "word",
+          "contribution": 0.15331376185222134
+        },
+        {
+          "term": "what",
+          "branch": "word",
+          "contribution": 0.13445655490454925
+        }
+      ],
+      "top_negative": [
+        {
+          "term": "sense",
+          "branch": "word",
+          "contribution": -0.09601777542027773
+        },
+        {
+          "term": "deprived",
+          "branch": "word",
+          "contribution": -0.08945680656770254
+        },
+        {
+          "term": "why",
+          "branch": "word",
+          "contribution": -0.08628994354514537
+        },
+        {
+          "term": "organization",
+          "branch": "word",
+          "contribution": -0.0750354273207613
+        },
+        {
+          "term": "you to",
+          "branch": "word",
+          "contribution": -0.05475518002180536
+        }
+      ],
+      "word_term_presence": {
+        "intellect": true,
+        "deficient": true,
+        "intellect deficient": false,
+        "worms": false,
+        "grave": true,
+        "deserve death": false
+      },
+      "title": "An indirect personal insult falls below the queue cutoff",
+      "error_type": "false_negative",
+      "failure_mode": "Indirect insult / capacity boundary",
+      "excerpt": "What an intellect deficient person you are.",
+      "reason": "A person is directly demeaned for their perceived intelligence. Profanity is not required.",
+      "observed": "The phrase intellect deficient is absent from the word vocabulary. Nonsense and you are push upward, while deprived and sense push down. The comment ranks 1,041, outside the 992 review slots.",
+      "interpretation": "The model represents the wording weakly; the fixed review budget then excludes a borderline score. A missed item is not the same as a zero-risk prediction.",
+      "rubric_change": "Include indirect and euphemistic personal attacks. Separate criticism of an argument from degradation of a person.",
+      "model_score": 0.1535805245000119,
+      "reference_label": 1,
+      "recommended_decision": "Violation"
+    },
+    {
+      "id": "e0b9e43bd4f402e09009d9b1b6fdf3d2f23d43cbc4c06862f0c23a022c37e55a",
+      "text": "Even the worms won't occupy his grave.",
+      "toxicity": 0.5,
+      "label": 1,
+      "threat": 0,
+      "insult": 0.5,
+      "identity_attack": 0,
+      "scores": {
+        "random": 0.8106842943091657,
+        "rules": 0,
+        "word": 0.04610616660671496,
+        "word_char": 0.01921839178519536
+      },
+      "rank": 5828,
+      "top_positive": [
+        {
+          "term": "his",
+          "branch": "word",
+          "contribution": 0.2857711014680951
+        },
+        {
+          "term": "grave",
+          "branch": "word",
+          "contribution": 0.16050667683314168
+        },
+        {
+          "term": "even",
+          "branch": "word",
+          "contribution": 0.06322526565300224
+        },
+        {
+          "term": " his ",
+          "branch": "character",
+          "contribution": 0.0625633052838527
+        },
+        {
+          "term": "the",
+          "branch": "word",
+          "contribution": 0.06226353264134783
+        },
+        {
+          "term": " his",
+          "branch": "character",
+          "contribution": 0.05836940416377455
+        },
+        {
+          "term": "rav",
+          "branch": "character",
+          "contribution": 0.05468242674979726
+        },
+        {
+          "term": " wo",
+          "branch": "character",
+          "contribution": 0.05395196235465006
+        }
+      ],
+      "top_negative": [
+        {
+          "term": "even the",
+          "branch": "word",
+          "contribution": -0.2041445288388692
+        },
+        {
+          "term": "won",
+          "branch": "word",
+          "contribution": -0.11626441728134498
+        },
+        {
+          "term": "occ",
+          "branch": "character",
+          "contribution": -0.0816513598920147
+        },
+        {
+          "term": "occu",
+          "branch": "character",
+          "contribution": -0.08036541530612998
+        },
+        {
+          "term": " occu",
+          "branch": "character",
+          "contribution": -0.0727381336106024
+        }
+      ],
+      "word_term_presence": {
+        "intellect": true,
+        "deficient": true,
+        "intellect deficient": false,
+        "worms": false,
+        "grave": true,
+        "deserve death": false
+      },
+      "title": "A contemptuous metaphor needs a target",
+      "error_type": "false_negative",
+      "failure_mode": "Figurative language / missing context",
+      "excerpt": "Even the worms won't occupy his grave.",
+      "reason": "If directed at a real person, this is a degrading attack. The referent is absent, and mentioning a grave is not automatically a threat.",
+      "observed": "Worms is absent from the word vocabulary. His and grave are modest positive influences, while even the pushes down. The score is 0.019 and the rank is 5,828.",
+      "interpretation": "The metaphor’s degrading meaning is not captured well by the short lexical features. The reference annotation is exactly 0.5, so the benchmark class itself is a boundary case.",
+      "rubric_change": "Consider figurative degradation. Require context for the target and distinguish an insult from a threat.",
+      "model_score": 0.01921839178519536,
+      "reference_label": 1,
+      "recommended_decision": "Needs context / escalate"
+    },
+    {
+      "id": "1b1ebcae45b05094f7cfe6e38650339475213977c635ef0e4042fbb05672dddb",
+      "text": "Yes, clearly these teenagers deserve death for simple trespassing and destruction of property charges.",
+      "toxicity": 1,
+      "label": 1,
+      "threat": 1,
+      "insult": 0,
+      "identity_attack": 0,
+      "scores": {
+        "random": 0.7331558326938996,
+        "rules": 0,
+        "word": 0.1717827816130968,
+        "word_char": 0.15014588406828247
+      },
+      "rank": 1063,
+      "top_positive": [
+        {
+          "term": "death",
+          "branch": "word",
+          "contribution": 0.43627748919486264
+        },
+        {
+          "term": "deserve",
+          "branch": "word",
+          "contribution": 0.2316147860743785
+        },
+        {
+          "term": "teenagers",
+          "branch": "word",
+          "contribution": 0.20664278181530416
+        },
+        {
+          "term": "destruction",
+          "branch": "word",
+          "contribution": 0.13536029883443002
+        },
+        {
+          "term": "ath",
+          "branch": "character",
+          "contribution": 0.13293346535673922
+        },
+        {
+          "term": "ass",
+          "branch": "character",
+          "contribution": 0.11144311970781325
+        },
+        {
+          "term": " des",
+          "branch": "character",
+          "contribution": 0.09457735720215876
+        },
+        {
+          "term": "these",
+          "branch": "word",
+          "contribution": 0.09278926962623589
+        }
+      ],
+      "top_negative": [
+        {
+          "term": "charges",
+          "branch": "word",
+          "contribution": -0.11470478553523374
+        },
+        {
+          "term": "ruc",
+          "branch": "character",
+          "contribution": -0.059184301445789574
+        },
+        {
+          "term": "truc",
+          "branch": "character",
+          "contribution": -0.046893625273389944
+        },
+        {
+          "term": "cha",
+          "branch": "character",
+          "contribution": -0.04590258031856736
+        },
+        {
+          "term": "stru",
+          "branch": "character",
+          "contribution": -0.04565729075401438
+        }
+      ],
+      "word_term_presence": {
+        "intellect": true,
+        "deficient": true,
+        "intellect deficient": false,
+        "worms": false,
+        "grave": true,
+        "deserve death": false
+      },
+      "title": "Potential sarcasm about harm requires escalation",
+      "error_type": "false_negative",
+      "failure_mode": "Sarcasm / harm context",
+      "excerpt": "Yes, clearly these teenagers deserve death for simple trespassing and destruction of property charges.",
+      "reason": "The statement could endorse harm or sarcastically condemn an excessive response. The user selected escalation when intent is unclear.",
+      "observed": "Death and deserve push upward, but deserve death is absent from the word vocabulary. The score is 0.150 and the rank is 1,063.",
+      "interpretation": "This is a benchmark miss, but it does not establish that the correct policy decision is removal. The model also cannot supply the missing surrounding context.",
+      "rubric_change": "For ambiguous sarcasm or quotation involving harm, escalate with a harm-context reason. Do not automatically infer endorsement or dismiss it as a joke.",
+      "model_score": 0.15014588406828247,
+      "reference_label": 1,
+      "recommended_decision": "Needs context / escalate"
+    }
+  ]
+}
